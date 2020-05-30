@@ -1,6 +1,5 @@
 @import '~@react-md/theme/dist/color-palette';
 
-$rmd-theme-light: false;
 $rmd-theme-dark-background: #121212;
 
 @import '~@react-md/link/dist/mixins';
@@ -9,3 +8,9 @@ $rmd-theme-dark-background: #121212;
 @import '~@react-md/utils/dist/mixins';
 
 @include react-md-utils;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include rmd-theme-dark;
+  }
+}
