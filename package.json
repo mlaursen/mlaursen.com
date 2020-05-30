@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "predeploy": "rm -rf out && next build && next export && touch out/.nojekyll",
+    "predeploy": "rm -rf out && next build && next export && touch out/.nojekyll && cp CNAME out/CNAME",
     "deploy": "gh-pages -d out -t",
     "dev": "next dev",
     "build": "next build",
