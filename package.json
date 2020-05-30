@@ -5,6 +5,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "predeploy": "rm -rf out && next build && next export && touch out/.nojekyll",
+    "deploy": "gh-pages -d out -t",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -30,6 +32,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4.0.4",
+    "gh-pages": "^3.0.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.7",
     "node-sass": "^4.14.1",
