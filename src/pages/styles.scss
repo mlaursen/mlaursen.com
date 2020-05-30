@@ -1,0 +1,11 @@
+@import '~@react-md/theme/dist/color-palette';
+
+$rmd-theme-light: false;
+$rmd-theme-dark-background: #121212;
+
+@import '~@react-md/link/dist/mixins';
+@import '~@react-md/theme/dist/mixins';
+@import '~@react-md/typography/dist/mixins';
+@import '~@react-md/utils/dist/mixins';
+
+@include react-md-utils;
