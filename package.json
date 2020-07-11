@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "predeploy": "rm -rf out && next build && next export && touch out/.nojekyll && cp CNAME out/CNAME",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "deploy": "gh-pages -d out -t",
     "dev": "next dev",
     "build": "next build",
@@ -14,34 +15,38 @@
   "repository": "git@github.com:mlaursen/mlaursen.com.git",
   "author": "Mikkel Laursen <mlaursen03@gmail.com>",
   "dependencies": {
-    "@react-md/link": "^2.0.0-beta.1",
-    "@react-md/theme": "^2.0.0-beta.1",
-    "@react-md/typography": "^2.0.0-beta.1",
-    "@react-md/utils": "^2.0.0-beta.1",
+    "@react-md/link": "^2.0.2",
+    "@react-md/theme": "^2.0.2",
+    "@react-md/typography": "^2.0.2",
+    "@react-md/utils": "^2.0.2",
     "next": "^9.4.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@types/node": "^14.0.6",
-    "@types/react": "^16.9.35",
+    "@types/node": "^14.0.22",
+    "@types/react": "^16.9.42",
     "@types/react-dom": "^16.9.8",
-    "@typescript-eslint/eslint-plugin": "^3.0.2",
-    "@typescript-eslint/parser": "^3.0.2",
-    "eslint": "^7.1.0",
+    "@typescript-eslint/eslint-plugin": "^3.6.0",
+    "@typescript-eslint/parser": "^3.6.0",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^4.0.4",
-    "gh-pages": "^3.0.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.7",
+    "gh-pages": "^3.1.0",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.7",
+    "lint-staged": "^10.2.11",
     "node-sass": "^4.14.1",
     "prettier": "^2.0.5",
-    "typescript": "^3.9.3"
+    "typescript": "^3.9.6"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn lint"
     }
   },
   "lint-staged": {

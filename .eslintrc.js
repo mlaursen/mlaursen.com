@@ -1,7 +1,7 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
-    'eslint:recommended',
+    'airbnb',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
@@ -46,5 +46,8 @@ module.exports = {
     // don't really care about these
     'react/display-name': 0,
     'react/no-unescaped-entities': 0,
+    'react/jsx-props-no-spreading': 0,
+    'react/jsx-filename-extension': 0,
+    'react/jsx-one-expression-per-line': 0,
   },
 };
