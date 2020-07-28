@@ -1,6 +1,6 @@
 @import '~@react-md/theme/dist/color-palette';
 
-$rmd-theme-dark-background: #121212;
+$rmd-theme-dark-elevation: 'prefers-color-scheme';
 
 @import '~@react-md/link/dist/mixins';
 @import '~@react-md/theme/dist/mixins';
