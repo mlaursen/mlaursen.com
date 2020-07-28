@@ -12,7 +12,8 @@
     "isolatedModules": true
   },
   "include": [
-    "src"
+    "src",
+    "next-env.d.ts"
   ],
   "exclude": [
     "src/server",

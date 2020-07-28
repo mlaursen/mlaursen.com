@@ -21,9 +21,6 @@
       "dom",
       "dom.iterable",
       "esnext"
-    ],
-    "typeRoots": [
-      "src/@types"
     ]
   }
 }
