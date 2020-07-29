@@ -34,3 +34,4 @@ jobs:
     - run: yarn
     - run: yarn lint
     - run: yarn typecheck
+    - run: yarn build
