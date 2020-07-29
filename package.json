@@ -7,6 +7,7 @@
   "scripts": {
     "predeploy": "rm -rf out && next build && next export && touch out/.nojekyll && cp CNAME out/CNAME",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "typecheck": "tsc --noEmit",
     "deploy": "gh-pages -d out -t",
     "dev": "next dev",
     "build": "next build",
