@@ -1089,12 +1089,12 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/typography@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@react-md/typography/-/typography-2.1.1.tgz#355b91051098dd5f269db5e7f61e3ab6bc095020"
-  integrity sha512-nvSf8BGO5V3Nx2qlUBX/rbZod+IFWnxoRK8aJT9FaXZGwtnqjcVr2QeIGRgE5lqnVQHtt6YzOtdmQphiXgIHvg==
+"@react-md/typography@^2.1.1", "@react-md/typography@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@react-md/typography/-/typography-2.1.2.tgz#029d6d31a583496203b5e1e88e2612a6485cbff9"
+  integrity sha512-JqppgQeotmSBdowonldYWmM7riy+kpQ4KEsmLhfLztmEfiNUehoRezEPLQWpJgNyNOgARyoXhajsTgC3ukfe7g==
   dependencies:
-    "@react-md/theme" "^2.1.1"
+    "@react-md/theme" "^2.1.2"
     "@react-md/utils" "^2.1.0"
     classnames "^2.2.6"
   optionalDependencies:
