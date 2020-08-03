@@ -1066,10 +1066,10 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/theme@^2.0.2", "@react-md/theme@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@react-md/theme/-/theme-2.1.1.tgz#ad06d705b575576d5f2766350554d2370538b874"
-  integrity sha512-RTYGeElF0NYNJDpSTgeVbXvsCgSiCGdPsgghQpGYhfc+TuJrgkPKTL8Tvl+DFpPLu6BjdrYwvcLpy0j4eWx0GQ==
+"@react-md/theme@^2.1.1", "@react-md/theme@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@react-md/theme/-/theme-2.1.2.tgz#ea2a77659db8cafa3463cb5e96e3fa66a1d312d1"
+  integrity sha512-XU9O3N2zkq/J0FW8mGlZu3OA1ASjoB/PbF7ChBh/Ccq9uz5j1UbwtxhBoVA4NGfdljVKmQVSW40Ce0iEamcIfg==
   dependencies:
     "@react-md/utils" "^2.1.0"
   optionalDependencies:
