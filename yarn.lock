@@ -1123,10 +1123,10 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/utils@^2.0.2", "@react-md/utils@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@react-md/utils/-/utils-2.1.0.tgz#a3121477f95d1705c6ea6480ee1a093356712305"
-  integrity sha512-4CsxpH2Jj8yG47Tse0YcMmKt95OFhl+5YyGpmpJLzipvnHprARNMuwAhw+bxA1bIEnwonDTTk1JftBJEGiBfsw==
+"@react-md/utils@^2.1.0", "@react-md/utils@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@react-md/utils/-/utils-2.2.2.tgz#6b49abd78b040fdf89ef5b6a3245d5c25e3ed0e1"
+  integrity sha512-Hp/i7XJCKfWNw/H+u6503ZNIiqlqDBNmcVuYVLVggDirdcykQFH3zuP14918a0HI3rWlSFZOLmY0Na6DeMgaDw==
   dependencies:
     resize-observer-polyfill "^1.5.1"
 
