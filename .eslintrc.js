@@ -18,6 +18,9 @@ module.exports = {
     },
   },
   rules: {
+    // false flags for React
+    'no-use-before-define': 0,
+
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
 
