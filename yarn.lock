@@ -1073,68 +1073,68 @@
   resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-9.5.2.tgz#5d92d8ad0f2bd79de2290614e74e5a12a0cda02b"
   integrity sha512-ch/16u3OVy/aIXJROwqXZjGw/tFMyG7qy2IGDA2RFjvQMtPyJJrklmwX2EcfH4+4spRI2MZKes2soI+0w2/MDQ==
 
-"@react-md/link@^2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@react-md/link/-/link-2.2.2.tgz#d4cb349ffeb064108e7cdccbe66465527d097955"
-  integrity sha512-BPHDBQraNQnBC6hQmyo2y06tY9WO25QQo47nTqSEr8U/euKF3YPCG2ncacLgMfos/4vwXD8nA5jA7+kagrcJRw==
+"@react-md/link@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@react-md/link/-/link-2.3.0.tgz#ddd93c73ef07c9998f1986c3f88634fa2a66ef94"
+  integrity sha512-J2XJV1dTJvOFL9rO3uLs+QTafGxznMDI3969WgrsvF/Q+4iR+I4qAAhLyTzNftrUZVDfM6SxFpL03/RbajSx2A==
   dependencies:
-    "@react-md/states" "^2.2.2"
-    "@react-md/theme" "^2.2.2"
-    "@react-md/transition" "^2.2.2"
-    "@react-md/typography" "^2.2.2"
+    "@react-md/states" "^2.3.0"
+    "@react-md/theme" "^2.3.0"
+    "@react-md/transition" "^2.3.0"
+    "@react-md/typography" "^2.3.0"
     classnames "^2.2.6"
   optionalDependencies:
     prop-types "^15.6.2"
 
-"@react-md/portal@^2.2.2":
+"@react-md/portal@^2.0.2":
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@react-md/portal/-/portal-2.2.2.tgz#74edaa54b5e68d8c2a2253c1bd4aa5de49ad7a4d"
   integrity sha512-jld26W2hsZsyfkMXaOJjJQAcxb/keAnyUz13B/a000vvkBSTs2X7QTqYc68cIUt3Q580sdHVstNLU8n765VQVg==
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/states@^2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@react-md/states/-/states-2.2.2.tgz#40d3825d1b50cf5cbb17306d2e46e3c42d1a9b3d"
-  integrity sha512-UyQASSVQ/iBXijGpPFg/ZWvNJoxd51ji25ITpS1lm24GMCkWwSRcAuruCq9tfCtNLBw23/aKduNaJ/Ynq1YkSA==
+"@react-md/states@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@react-md/states/-/states-2.3.0.tgz#e843cad6e774e0c534abe53a31417354d60a3f8d"
+  integrity sha512-EymlXbcFhaxl6cNGo8bQ39lccwesRGNxry8+XPCX/sDoPau9Kfxu3uwDgpZA6yp5Td+YUjg5IWH0vBOGTV2vjg==
   dependencies:
-    "@react-md/theme" "^2.2.2"
-    "@react-md/transition" "^2.2.2"
-    "@react-md/utils" "^2.2.2"
-    react-transition-group "^4.3.0"
+    "@react-md/theme" "^2.3.0"
+    "@react-md/transition" "^2.3.0"
+    "@react-md/utils" "^2.3.0"
+    react-transition-group "^4.4.1"
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/theme@^2.1.2", "@react-md/theme@^2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@react-md/theme/-/theme-2.2.2.tgz#4d6f3831dcaf8abf8fff0f81cbf2a8af6b32c8ac"
-  integrity sha512-MotrKa77nKLIz6o6ixTtwauvMhalY1Mi9UO+rSEb4Sw9DDma0RlvxsffIZQcRM4v8qLhujYOC9XP50ushedguw==
+"@react-md/theme@^2.1.2", "@react-md/theme@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@react-md/theme/-/theme-2.3.0.tgz#383812a00da985f9a7970bc2b46b16c12d5fe948"
+  integrity sha512-NorEEcgAy+iIXWTPT+QqF2ks90l+p2qCI0sn/L1clW17dPtgBK11go66NLketUTtYga3JnNpKuBRr6INj4/s/A==
   dependencies:
-    "@react-md/utils" "^2.2.2"
+    "@react-md/utils" "^2.3.0"
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/transition@^2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@react-md/transition/-/transition-2.2.2.tgz#31ec71c54e1d16d49866613a89cae85ef2e14b9b"
-  integrity sha512-T3J/79MmndbxmtzIG75IJWM4WlSNIit4i2lxVAG6yMPTO7+KS6snel90d+viR+bpduer5Y+9ZxjgWFFOJeQpkw==
+"@react-md/transition@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@react-md/transition/-/transition-2.3.0.tgz#269839ae10634a5ca282479866595b2ec183bbdc"
+  integrity sha512-WrJDoh5I1UmIFs9BGfZze8d9s6KKUINwtidMxwAlTRCONSDpFolAVHa1HFgVAQGGSzk/ntpzd58ic0+L1T7d6w==
   dependencies:
-    "@react-md/portal" "^2.2.2"
-    "@react-md/theme" "^2.2.2"
-    "@react-md/utils" "^2.2.2"
+    "@react-md/portal" "^2.0.2"
+    "@react-md/theme" "^2.3.0"
+    "@react-md/utils" "^2.3.0"
     "@types/react-transition-group" "^4.2.4"
     classnames "^2.2.6"
-    react-transition-group "^4.3.0"
+    react-transition-group "^4.4.1"
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/typography@^2.1.2", "@react-md/typography@^2.2.2":
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/@react-md/typography/-/typography-2.2.2.tgz#c183d0a509ba4e83705b1c43cf1db2a7e453694a"
-  integrity sha512-8Ed2CJm1apThaR1fHzORRuF6mTNLI0WZriGM8QL1jLYTvqNbul/PBfYMXOmxSw7A2Gk6Uy/q9nrMLuug0ki0Zw==
+"@react-md/typography@^2.1.2", "@react-md/typography@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@react-md/typography/-/typography-2.3.0.tgz#40f6ebb0a82457c192c7e9fcf40b2daa9d4a2515"
+  integrity sha512-1Eka1Mmzdl12gS5KdhSePZWYV+19w1+rHW5+tn2EdY4YJxiZ9XAlto9pUqbk8s9vzT9s/Eat9qmQhuxUyVDa/Q==
   dependencies:
-    "@react-md/theme" "^2.2.2"
-    "@react-md/utils" "^2.2.2"
+    "@react-md/theme" "^2.3.0"
+    "@react-md/utils" "^2.3.0"
     classnames "^2.2.6"
   optionalDependencies:
     prop-types ">= 15.6"
@@ -1143,6 +1143,13 @@
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/@react-md/utils/-/utils-2.2.2.tgz#6b49abd78b040fdf89ef5b6a3245d5c25e3ed0e1"
   integrity sha512-Hp/i7XJCKfWNw/H+u6503ZNIiqlqDBNmcVuYVLVggDirdcykQFH3zuP14918a0HI3rWlSFZOLmY0Na6DeMgaDw==
+  dependencies:
+    resize-observer-polyfill "^1.5.1"
+
+"@react-md/utils@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@react-md/utils/-/utils-2.3.0.tgz#8c2a4a0ed4fb09b78e981a08d05596ce126e7c6f"
+  integrity sha512-oqPPgMdMxVcQekgvfv7mUIQk+FpWL1UQcYpLuWjNMmL5/SVfUnPwp9W5Uk7Qjs143YIPK/7dNM5c3l329K7j4Q==
   dependencies:
     resize-observer-polyfill "^1.5.1"
 
@@ -5718,7 +5725,7 @@ react-refresh@0.8.3:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
-react-transition-group@^4.3.0:
+react-transition-group@^4.4.1:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.1.tgz#63868f9325a38ea5ee9535d828327f85773345c9"
   integrity sha512-Djqr7OQ2aPUiYurhPalTrVy9ddmFCCzwhqQmtN+J3+3DzLO209Fdr70QrN8Z3DsglWql6iY1lDWAfpFiBtuKGw==
