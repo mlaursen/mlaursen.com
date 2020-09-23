@@ -18,7 +18,7 @@
   "dependencies": {
     "@react-md/link": "^2.3.0",
     "@react-md/theme": "^2.3.1",
-    "@react-md/typography": "^2.1.2",
+    "@react-md/typography": "^2.3.1",
     "@react-md/utils": "^2.3.1",
     "next": "^9.5.3",
     "react": "^16.13.1",
