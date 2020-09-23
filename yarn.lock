@@ -1114,12 +1114,12 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/theme@^2.1.2", "@react-md/theme@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@react-md/theme/-/theme-2.3.0.tgz#383812a00da985f9a7970bc2b46b16c12d5fe948"
-  integrity sha512-NorEEcgAy+iIXWTPT+QqF2ks90l+p2qCI0sn/L1clW17dPtgBK11go66NLketUTtYga3JnNpKuBRr6INj4/s/A==
+"@react-md/theme@^2.3.0", "@react-md/theme@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@react-md/theme/-/theme-2.3.1.tgz#c738c6d1b298c02edab4f3eee24dee552e404358"
+  integrity sha512-KVxkW5Wth013I6nAvBHjavM75Evz9kfhEP5OFNnKANEOBi8cNncBSi+AOx3Hu9UPNWS5we2p44d8VDl14JlBww==
   dependencies:
-    "@react-md/utils" "^2.3.0"
+    "@react-md/utils" "^2.3.1"
   optionalDependencies:
     prop-types ">= 15.6"
 
