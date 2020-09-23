@@ -1082,15 +1082,15 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@react-md/link@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@react-md/link/-/link-2.3.0.tgz#ddd93c73ef07c9998f1986c3f88634fa2a66ef94"
-  integrity sha512-J2XJV1dTJvOFL9rO3uLs+QTafGxznMDI3969WgrsvF/Q+4iR+I4qAAhLyTzNftrUZVDfM6SxFpL03/RbajSx2A==
+"@react-md/link@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@react-md/link/-/link-2.3.1.tgz#d3ab66f84c92e10cf4acb0b9afaa9ef87f65688f"
+  integrity sha512-C0dUN1WijoqDpWELrNqW1y0pcXhHYJPJtqwrDXBqn0jJAXeLPsRBu/l6mXkKVSTS7lm0DGTN5nGLMlsEWeHCyQ==
   dependencies:
-    "@react-md/states" "^2.3.0"
-    "@react-md/theme" "^2.3.0"
-    "@react-md/transition" "^2.3.0"
-    "@react-md/typography" "^2.3.0"
+    "@react-md/states" "^2.3.1"
+    "@react-md/theme" "^2.3.1"
+    "@react-md/transition" "^2.3.1"
+    "@react-md/typography" "^2.3.1"
     classnames "^2.2.6"
   optionalDependencies:
     prop-types "^15.6.2"
@@ -1102,19 +1102,19 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/states@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@react-md/states/-/states-2.3.0.tgz#e843cad6e774e0c534abe53a31417354d60a3f8d"
-  integrity sha512-EymlXbcFhaxl6cNGo8bQ39lccwesRGNxry8+XPCX/sDoPau9Kfxu3uwDgpZA6yp5Td+YUjg5IWH0vBOGTV2vjg==
+"@react-md/states@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@react-md/states/-/states-2.3.1.tgz#0366b4d87f4d7ae4f0154ff16803cdb93893091a"
+  integrity sha512-h9aVFr7aO0eJrkiekAo6Ie1/wOyzPeA/AzCOFWnMQvSfNyapUl4iBKpJTttg9ZByjHbsZlvZK2yqKmJ6osStPA==
   dependencies:
-    "@react-md/theme" "^2.3.0"
-    "@react-md/transition" "^2.3.0"
-    "@react-md/utils" "^2.3.0"
+    "@react-md/theme" "^2.3.1"
+    "@react-md/transition" "^2.3.1"
+    "@react-md/utils" "^2.3.1"
     react-transition-group "^4.4.1"
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/theme@^2.3.0", "@react-md/theme@^2.3.1":
+"@react-md/theme@^2.3.1":
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/@react-md/theme/-/theme-2.3.1.tgz#c738c6d1b298c02edab4f3eee24dee552e404358"
   integrity sha512-KVxkW5Wth013I6nAvBHjavM75Evz9kfhEP5OFNnKANEOBi8cNncBSi+AOx3Hu9UPNWS5we2p44d8VDl14JlBww==
@@ -1123,21 +1123,21 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/transition@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@react-md/transition/-/transition-2.3.0.tgz#269839ae10634a5ca282479866595b2ec183bbdc"
-  integrity sha512-WrJDoh5I1UmIFs9BGfZze8d9s6KKUINwtidMxwAlTRCONSDpFolAVHa1HFgVAQGGSzk/ntpzd58ic0+L1T7d6w==
+"@react-md/transition@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@react-md/transition/-/transition-2.3.1.tgz#8d011a311f9336cc181f76340d389882d6786969"
+  integrity sha512-SJJ4/ghf5GSgSvv3eaQUNTGcoqSB3MaOMSuL2firQhHSPNeqcvONj6nRaoD/AA5iP6PVtHcsfy19H8ghNxuJRg==
   dependencies:
     "@react-md/portal" "^2.0.2"
-    "@react-md/theme" "^2.3.0"
-    "@react-md/utils" "^2.3.0"
+    "@react-md/theme" "^2.3.1"
+    "@react-md/utils" "^2.3.1"
     "@types/react-transition-group" "^4.2.4"
     classnames "^2.2.6"
     react-transition-group "^4.4.1"
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/typography@^2.3.0", "@react-md/typography@^2.3.1":
+"@react-md/typography@^2.3.1":
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/@react-md/typography/-/typography-2.3.1.tgz#9e1d93c9e30fb9f6390436216c06e0b35049b69e"
   integrity sha512-celM5StTo2qIwe3FgCTQTCGS5ygI4ifzMLIo/lzdFldMVvJ6Z1oa5/SBawrwxi671zmNDTvZCidTNKyaRKxbPA==
@@ -1148,7 +1148,7 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/utils@^2.3.0", "@react-md/utils@^2.3.1":
+"@react-md/utils@^2.3.1":
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/@react-md/utils/-/utils-2.3.1.tgz#56f583c0405228b36582364ed29e39033d3c907c"
   integrity sha512-k+4LRFnq0asEUgSdhRqBO/BUNlOdkkT6tN2QDwUOvjnjuwByaBnil1fzI6j2bE/noQsO1jeedN/59OFKL2sPDA==
