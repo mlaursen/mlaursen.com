@@ -1166,12 +1166,12 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/theme@^2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@react-md/theme/-/theme-2.4.1.tgz#cdb0d0aac22ea1c21e1e9210fe9f8a32f46e89bb"
-  integrity sha512-bOpoo/rDVa4IaKHwEIUCQSmXGtd7iuFnaHFWkrmXZ+r06ecYu06aJKava/+PfMuREgoWAisA7POXE5koeE7WFw==
+"@react-md/theme@^2.4.1", "@react-md/theme@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@react-md/theme/-/theme-2.4.2.tgz#40594561bbf4fc31541a0731ff38c2a6035234ff"
+  integrity sha512-exgNeem/GKxiKJWutgzXAI9WZvTCTj85S9oI4xSkDgfCEEkRvYIF/i6lug518yo80OrY92KCrfaO1EJgXASVmA==
   dependencies:
-    "@react-md/utils" "^2.4.1"
+    "@react-md/utils" "^2.4.2"
   optionalDependencies:
     prop-types ">= 15.6"
 
@@ -1189,13 +1189,13 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/typography@^2.3.1", "@react-md/typography@^2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@react-md/typography/-/typography-2.4.1.tgz#f91f9f0eb3a16c51d258d370e1fa05b41b52921e"
-  integrity sha512-GBvbOunWT4YZV63PGqJJ57qzXt36dvJ3rkT/bhXKc7h3DkOE1q1yuiG5MJRaocB/PpHK2R3k7FbwOzYbU1/oUA==
+"@react-md/typography@^2.4.1", "@react-md/typography@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@react-md/typography/-/typography-2.4.2.tgz#d76344f6e2121d6d0ff7be24e2a7fe27735f690e"
+  integrity sha512-gyG0TMBjLdFvpgx/ubWlr6gAVyN1SX0fpmviK/gV9Xl9QfPRonDNXU5Gy0Yg2Ey2xRa/pH5rbFxft8RikoTWqQ==
   dependencies:
-    "@react-md/theme" "^2.4.1"
-    "@react-md/utils" "^2.4.1"
+    "@react-md/theme" "^2.4.2"
+    "@react-md/utils" "^2.4.2"
     classnames "^2.2.6"
   optionalDependencies:
     prop-types ">= 15.6"
