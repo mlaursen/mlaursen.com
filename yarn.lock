@@ -1134,34 +1134,34 @@
   dependencies:
     mkdirp "^1.0.4"
 
-"@react-md/link@^2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@react-md/link/-/link-2.4.1.tgz#036c16c9c51aafc179dcda81702136e950eb5c45"
-  integrity sha512-DH15kNdqIkmAAMzTBZqLpPEI0j+WsLkf2dJ7NDj8QviB6yf5vqDOlh0TQBWARrPdzWH/lvpmJ2VJQxj3l79CJQ==
+"@react-md/link@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@react-md/link/-/link-2.4.2.tgz#9c60ba50fbbf2b62e25dad480ad7337f0120b45a"
+  integrity sha512-LGtKiGiVdMZ7C99aLVTd4i30scGvPxZOh9zJ3iknnjtK/DvqrRTlQ9P03kIbfhE3LtWpBbNxdY4GD3bTHT5bmA==
   dependencies:
-    "@react-md/states" "^2.4.1"
-    "@react-md/theme" "^2.4.1"
-    "@react-md/transition" "^2.4.1"
-    "@react-md/typography" "^2.4.1"
+    "@react-md/states" "^2.4.2"
+    "@react-md/theme" "^2.4.2"
+    "@react-md/transition" "^2.4.2"
+    "@react-md/typography" "^2.4.2"
     classnames "^2.2.6"
   optionalDependencies:
     prop-types "^15.6.2"
 
-"@react-md/portal@^2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@react-md/portal/-/portal-2.4.1.tgz#edcbd6d29325f8b45298fa39cd4d1d0c3d2d922d"
-  integrity sha512-7huSgYb1odPlYAVBezA63tVwZu1spH5DHHKr4/WTDwT+znlo1GxBsPVlmKskODOMVqLv9QF8BkCG4+nzJYxKjQ==
+"@react-md/portal@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@react-md/portal/-/portal-2.4.2.tgz#7f402b28b8d05ffe6a6743c6aaa05b86bcbe9187"
+  integrity sha512-7Bk1VeL5eODLXzmXi7Nr+ijRaib1letwuW8kJShKXsBOUK5eBf2vvJGsIkcVPrLWIhy0/Nhgu2kAImMlzYnvSw==
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/states@^2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@react-md/states/-/states-2.4.1.tgz#e7c2b710e1a46324c93251f9860057399aab5cba"
-  integrity sha512-DsjEwfs3x2BWkSiO1PtPpMMwiSRVWd0jQP2vR2zdm6ei9NDd5RcaZ+ZKIuGG3vMfArlO2xRmvM+BJvUo25zPfQ==
+"@react-md/states@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@react-md/states/-/states-2.4.2.tgz#39edf360d600a5d7bba3cac24aea9e91bfb4fb7b"
+  integrity sha512-Gy4zlRtbT2yYHjSLh9zPj6TsuzgN+QPy8rL6Xbsw4cdBv/vGjwXurL48DltH3elnUievOPLogg4fmIz4JNxo5Q==
   dependencies:
-    "@react-md/theme" "^2.4.1"
-    "@react-md/transition" "^2.4.1"
-    "@react-md/utils" "^2.4.1"
+    "@react-md/theme" "^2.4.2"
+    "@react-md/transition" "^2.4.2"
+    "@react-md/utils" "^2.4.2"
     react-transition-group "^4.4.1"
   optionalDependencies:
     prop-types ">= 15.6"
@@ -1175,21 +1175,21 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/transition@^2.4.1":
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/@react-md/transition/-/transition-2.4.1.tgz#0ee37208335b15c4953eb01136448ab2b073005e"
-  integrity sha512-gdvwZer8X+PC318BsfTtm8L6VWg+/dAbVFTnFJcjSYIuEzU/Y79z7C5qHDfIQ7YkUS6mReCvYr23f9a/nqZuJA==
+"@react-md/transition@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@react-md/transition/-/transition-2.4.2.tgz#4f192b2cf7019d9fcae313a71c69d1366c195c9d"
+  integrity sha512-ZnWAfgj+ObhuUUe353gElQo1B7+Wa6KOyWxnzn5GALPXEougJir0JCKsg3KTw4hWxcg+r0kEmm4QTGi+GbQWyg==
   dependencies:
-    "@react-md/portal" "^2.4.1"
-    "@react-md/theme" "^2.4.1"
-    "@react-md/utils" "^2.4.1"
+    "@react-md/portal" "^2.4.2"
+    "@react-md/theme" "^2.4.2"
+    "@react-md/utils" "^2.4.2"
     "@types/react-transition-group" "^4.2.4"
     classnames "^2.2.6"
     react-transition-group "^4.4.1"
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/typography@^2.4.1", "@react-md/typography@^2.4.2":
+"@react-md/typography@^2.4.2":
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/@react-md/typography/-/typography-2.4.2.tgz#d76344f6e2121d6d0ff7be24e2a7fe27735f690e"
   integrity sha512-gyG0TMBjLdFvpgx/ubWlr6gAVyN1SX0fpmviK/gV9Xl9QfPRonDNXU5Gy0Yg2Ey2xRa/pH5rbFxft8RikoTWqQ==
@@ -1200,7 +1200,7 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/utils@^2.4.1", "@react-md/utils@^2.4.2":
+"@react-md/utils@^2.4.2":
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/@react-md/utils/-/utils-2.4.2.tgz#adae01210dd1793e3f518c6f222e36916f2cd82c"
   integrity sha512-9lKxE+O5L1vJjWRK8ZsQnSmncmAW/KxpTZWIqzXvkInuhk+cCaAKj2fE3FcvLYi5mjYrattM52nNb/cywwc0sw==
