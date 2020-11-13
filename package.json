@@ -50,5 +50,8 @@
     "src/**/*.{ts,tsx,scss}": [
       "prettier --write"
     ]
+  },
+  "resolutions": {
+    "node-fetch": "2.6.1"
   }
 }
