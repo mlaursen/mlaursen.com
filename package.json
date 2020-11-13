@@ -21,21 +21,21 @@
     "@react-md/typography": "^2.4.2",
     "@react-md/utils": "^2.4.2",
     "next": "^10.0.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.13.1"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
-    "@mlaursen/eslint-config": "^0.0.4",
-    "@types/node": "^14.11.10",
-    "@types/react": "^16.9.53",
-    "@types/react-dom": "^16.9.8",
+    "@mlaursen/eslint-config": "^0.0.5",
+    "@types/node": "^14.14.7",
+    "@types/react": "^16.9.56",
+    "@types/react-dom": "^16.9.9",
     "eslint": "^7.13.0",
     "gh-pages": "^3.1.0",
     "husky": "^4.3.0",
-    "lint-staged": "^10.4.2",
-    "node-sass": "^4.14.1",
+    "lint-staged": "^10.5.1",
+    "node-sass": "^5.0.0",
     "prettier": "^2.1.2",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.5"
   },
   "husky": {
     "hooks": {
@@ -50,9 +50,5 @@
     "src/**/*.{ts,tsx,scss}": [
       "prettier --write"
     ]
-  },
-  "resolutions": {
-    "node-fetch": "2.6.1",
-    "webpack": "5.0.0"
   }
 }
