@@ -16,11 +16,11 @@
   "repository": "git@github.com:mlaursen/mlaursen.com.git",
   "author": "Mikkel Laursen <mlaursen03@gmail.com>",
   "dependencies": {
-    "@react-md/link": "^2.4.2",
-    "@react-md/theme": "^2.4.1",
-    "@react-md/typography": "^2.4.2",
-    "@react-md/utils": "^2.4.2",
-    "next": "^10.0.3",
+    "@react-md/link": "^2.5.0",
+    "@react-md/theme": "^2.5.0",
+    "@react-md/typography": "^2.5.0",
+    "@react-md/utils": "^2.5.0",
+    "next": "^10.0.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
@@ -50,8 +50,5 @@
     "src/**/*.{ts,tsx,scss}": [
       "prettier --write"
     ]
-  },
-  "resolutions": {
-    "node-fetch": "2.6.1"
   }
 }
