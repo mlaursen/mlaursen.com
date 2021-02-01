@@ -253,12 +253,12 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/theme@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@react-md/theme/-/theme-2.5.0.tgz#95932b3eee307401b5fc40d0125e7b2b9c9fd553"
-  integrity sha512-H0YWoChUl9AnbnlzY0rPNZ4fsREtEs6c6Jg+z7qKsqv0R3T42mMjhi411Zi70QWJPHAmcez3rj6V+T03Fbkfew==
+"@react-md/theme@^2.5.0", "@react-md/theme@^2.5.5":
+  version "2.5.5"
+  resolved "https://registry.yarnpkg.com/@react-md/theme/-/theme-2.5.5.tgz#7ba730bd5d3a5ad317b51f9a25f0da4cd7de8a2c"
+  integrity sha512-nTCUD5/Sbx7Tr7L9gD/J862BEMcplxucQ0Sw1fk2Z8fMLZOPlPkIMlDbuOatuzBJKqKrvtT4Bf2nQqRPaIf0nw==
   dependencies:
-    "@react-md/utils" "^2.5.0"
+    "@react-md/utils" "^2.5.5"
   optionalDependencies:
     prop-types ">= 15.6"
 
@@ -287,11 +287,12 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/utils@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@react-md/utils/-/utils-2.5.0.tgz#4648acf060904b5c5b2110e9bd4d99c58e4c5063"
-  integrity sha512-HaGTTAPvAefB26EAorDgf0yHD5GFe92HXx13ZVlkSEvf8pqb5r7Gk0Xx1fH8DGTlGEMI4Seh2gBKhW5p0OLTpg==
+"@react-md/utils@^2.5.0", "@react-md/utils@^2.5.5":
+  version "2.5.5"
+  resolved "https://registry.yarnpkg.com/@react-md/utils/-/utils-2.5.5.tgz#d30159ac3d864936df75197abe844ef7aa3da0ee"
+  integrity sha512-CBTnuwoaJ6YQifB9sY2rERgDhB3tZ4iSbfhAm2tzAfX5v4LzqzU83dLTmG3VZwCuq/PeX8YPzWH5u9k5byPODA==
   dependencies:
+    classnames "^2.2.6"
     resize-observer-polyfill "^1.5.1"
 
 "@types/color-name@^1.1.1":
