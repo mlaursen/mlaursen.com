@@ -19,8 +19,8 @@
     "@react-md/link": "^2.5.0",
     "@react-md/theme": "^2.5.0",
     "@react-md/typography": "^2.5.0",
-    "@react-md/utils": "^2.5.0",
-    "next": "^10.0.4",
+    "@react-md/utils": "^2.5.5",
+    "next": "^10.0.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
