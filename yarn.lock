@@ -214,15 +214,15 @@
   resolved "https://registry.yarnpkg.com/@opentelemetry/context-base/-/context-base-0.14.0.tgz#c67fc20a4d891447ca1a855d7d70fa79a3533001"
   integrity sha512-sDOAZcYwynHFTbLo6n8kIbLiVF3a3BLkrmehJUyEbT9F+Smbi47kLGS2gG2g0fjBLR/Lr1InPD7kXL7FaTqEkw==
 
-"@react-md/link@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@react-md/link/-/link-2.5.0.tgz#32b55f4670841476833fec638d9dd27489feb3e0"
-  integrity sha512-iOXYG0tHKUXU5R9vdL8NDswiq9RYCipzZb4bO73xBVAACziFU4IQ2TUAPaqEq84N+UBzMNSqZlp1sPM+1pfvcQ==
+"@react-md/link@^2.5.5":
+  version "2.5.5"
+  resolved "https://registry.yarnpkg.com/@react-md/link/-/link-2.5.5.tgz#ba41686e0b4f9b7bacc0115e9ba1e7dd416abbfb"
+  integrity sha512-5MPyX1bTMxB6IJ6J5Itn8h7n0TVomh8gDL6tSddYhAgz7Z3AV0ytM+OQi+81lTxT0Bk3BI/6rzVB/YQbww7dkw==
   dependencies:
-    "@react-md/states" "^2.5.0"
-    "@react-md/theme" "^2.5.0"
-    "@react-md/transition" "^2.5.0"
-    "@react-md/typography" "^2.5.0"
+    "@react-md/states" "^2.5.5"
+    "@react-md/theme" "^2.5.5"
+    "@react-md/transition" "^2.5.5"
+    "@react-md/typography" "^2.5.5"
     classnames "^2.2.6"
   optionalDependencies:
     prop-types "^15.6.2"
@@ -234,19 +234,19 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/states@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@react-md/states/-/states-2.5.0.tgz#1541558d0685925911c3073b7282bc51eab916de"
-  integrity sha512-MLs4Sp7Gck4TmbmVDpTg7h7nuaM+ZwE/XNIq20JMVGaIN5fd+cVWRUSfbyQv8sI7IXVPkF6I+zUaVSltLnYApA==
+"@react-md/states@^2.5.5":
+  version "2.5.5"
+  resolved "https://registry.yarnpkg.com/@react-md/states/-/states-2.5.5.tgz#0646ec361618cf152702fd4103fb780e6cbb1f83"
+  integrity sha512-VmlCBUzmhCnizxwvFokPW3R2OzcbmCytLVzvoDJFcUJWPWtllrm87/w5AuJZ8mJ9/1PEVlMEaue0PFMqrbHhtg==
   dependencies:
-    "@react-md/theme" "^2.5.0"
-    "@react-md/transition" "^2.5.0"
-    "@react-md/utils" "^2.5.0"
+    "@react-md/theme" "^2.5.5"
+    "@react-md/transition" "^2.5.5"
+    "@react-md/utils" "^2.5.5"
     react-transition-group "^4.4.1"
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/theme@^2.5.0", "@react-md/theme@^2.5.5":
+"@react-md/theme@^2.5.5":
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/@react-md/theme/-/theme-2.5.5.tgz#7ba730bd5d3a5ad317b51f9a25f0da4cd7de8a2c"
   integrity sha512-nTCUD5/Sbx7Tr7L9gD/J862BEMcplxucQ0Sw1fk2Z8fMLZOPlPkIMlDbuOatuzBJKqKrvtT4Bf2nQqRPaIf0nw==
@@ -255,27 +255,27 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/transition@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@react-md/transition/-/transition-2.5.0.tgz#8e6214962a67ee0a1d1b5e11bc545ef419db1abd"
-  integrity sha512-HEZR5R9IYa3UdC5Pkf5iCcD1s+AS0p/rhCKuavYm1IjDHOD91iqO9Goe14tDqHbRUNrv3a0iGx864/I/mo8KXA==
+"@react-md/transition@^2.5.5":
+  version "2.5.5"
+  resolved "https://registry.yarnpkg.com/@react-md/transition/-/transition-2.5.5.tgz#6ccffe1ba4369e887492abb84ece8ecb595922f2"
+  integrity sha512-OwIXhjMTsw1Xdejx+KMK9ORJdmg6pjIXLkic6X0zpetDGaxWrbsQrHCjGK493Ac/SR1+a2aYkh8CN3YJTzlk5g==
   dependencies:
     "@react-md/portal" "^2.5.0"
-    "@react-md/theme" "^2.5.0"
-    "@react-md/utils" "^2.5.0"
+    "@react-md/theme" "^2.5.5"
+    "@react-md/utils" "^2.5.5"
     "@types/react-transition-group" "^4.2.4"
     classnames "^2.2.6"
     react-transition-group "^4.4.1"
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/typography@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@react-md/typography/-/typography-2.5.0.tgz#c4e38dad050d447039c0a9486e59cc7846faac25"
-  integrity sha512-4DnO/w3cGi7pAs5p9ffQRF2cy2LzVjDmTBUx2Qwx/xX4uliC/E9Vg+Ui5rOIzJ+rEhC52b+uZipDF5gKIG7eYg==
+"@react-md/typography@^2.5.0", "@react-md/typography@^2.5.5":
+  version "2.5.5"
+  resolved "https://registry.yarnpkg.com/@react-md/typography/-/typography-2.5.5.tgz#5e7c432c57516bd1d59e5c89c825ab33a4f14c26"
+  integrity sha512-bbctCps7otCoM5a/0zZJziaGQtOYfVOorxzv/bmwZbzF2QYznGb356QrHtzzg3uz//pC21hadLUWtaO4diQr+A==
   dependencies:
-    "@react-md/theme" "^2.5.0"
-    "@react-md/utils" "^2.5.0"
+    "@react-md/theme" "^2.5.5"
+    "@react-md/utils" "^2.5.5"
     classnames "^2.2.6"
   optionalDependencies:
     prop-types ">= 15.6"
