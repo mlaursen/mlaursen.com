@@ -280,10 +280,10 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/utils@^2.5.0", "@react-md/utils@^2.5.5":
-  version "2.5.5"
-  resolved "https://registry.yarnpkg.com/@react-md/utils/-/utils-2.5.5.tgz#d30159ac3d864936df75197abe844ef7aa3da0ee"
-  integrity sha512-CBTnuwoaJ6YQifB9sY2rERgDhB3tZ4iSbfhAm2tzAfX5v4LzqzU83dLTmG3VZwCuq/PeX8YPzWH5u9k5byPODA==
+"@react-md/utils@^2.5.5", "@react-md/utils@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@react-md/utils/-/utils-2.6.0.tgz#0b3e58210e7399b2c0a5ae9f05c585336c5a73ef"
+  integrity sha512-BOjf5qryjbat3USherQCmZXoxvGicF94vALNB4PvMwPcz25MJy+1j2PkqZl774BA3eAhiBRQiDnu3Ak7a15T6Q==
   dependencies:
     classnames "^2.2.6"
     resize-observer-polyfill "^1.5.1"
