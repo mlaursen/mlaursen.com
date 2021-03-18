@@ -28,7 +28,7 @@ jobs:
           ${{ runner.os }}-yarn-
 
     - name: Run Lint and Typecheck
-      uses: actions/setup-node@v2.1.4
+      uses: actions/setup-node@v2.1.5
       with:
         node-version: 14
     - run: yarn
