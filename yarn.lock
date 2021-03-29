@@ -210,12 +210,12 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/theme@^2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@react-md/theme/-/theme-2.7.0.tgz#29d7f265dc46876b791e3df27548686524edf70c"
-  integrity sha512-ZkmTOWWIMZ4BPzSt1Yb7cSlSlxnKm5Ef6F5SA3iHpIoAO9TAonsaf8HkKqsVPEZ3Ap1SjJGvSaZHOwqy67TDwA==
+"@react-md/theme@^2.7.0", "@react-md/theme@^2.7.1":
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/@react-md/theme/-/theme-2.7.1.tgz#85ea16e516a19d86f49ddb254b05e1868097f250"
+  integrity sha512-6m4Ny1GZu2kHKWVZrfo6zJM5XpPjjEYBCAqoSFyGWuIlsjJk9lqcgz6miTajy7nwu/y9q1FpkKVygvFd9rTQaQ==
   dependencies:
-    "@react-md/utils" "^2.7.0"
+    "@react-md/utils" "^2.7.1"
   optionalDependencies:
     prop-types ">= 15.6"
 
@@ -233,21 +233,21 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/typography@^2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@react-md/typography/-/typography-2.7.0.tgz#befd0c8b6d33e6d750b4eaea44908dea4a5e2411"
-  integrity sha512-Hxzm3MkQYcF1hozNX6S6ZlPPIRYNRWoXjS5N8/kvVc9+Ez09xCCd6bKAM7zsG8VOUGWjBUevaM9eVZYdvrr8eg==
+"@react-md/typography@^2.7.0", "@react-md/typography@^2.7.1":
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/@react-md/typography/-/typography-2.7.1.tgz#a0a667bac58a4834d36ffd90aeca6bc6b595031e"
+  integrity sha512-I+31zfRBWnsbzJzL9Z5SfHjvxWcp4rgKI6ES2U5z5WdGBN1tMAPsIYNQWfwqEoexwGqwjgdPXfDCFv7FkLuNog==
   dependencies:
-    "@react-md/theme" "^2.7.0"
-    "@react-md/utils" "^2.7.0"
+    "@react-md/theme" "^2.7.1"
+    "@react-md/utils" "^2.7.1"
     classnames "^2.2.6"
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/utils@^2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@react-md/utils/-/utils-2.7.0.tgz#a7bb24df797deff39c2b27c42b0ce2c0c083dc78"
-  integrity sha512-DO43eMZgcdeJKEbD8KBJ5UqA4EMGEjBlx8mW2mr4VuvhAgGq3d57jjyX7sFCD/ukZmJAoVQo5DUckcp0RbpDww==
+"@react-md/utils@^2.7.0", "@react-md/utils@^2.7.1":
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/@react-md/utils/-/utils-2.7.1.tgz#a7a9aef70f3811d9fed5684c8589b4f20dc70aed"
+  integrity sha512-pj7JMkMiU0Bvnf6jJja4DNdmYqDok9rQHdZB8Atvos0bLF6ljD5F1T778IAYZ2zQx1QDmCPEe4UDbkKKVIIkVA==
   dependencies:
     classnames "^2.2.6"
     resize-observer-polyfill "^1.5.1"
