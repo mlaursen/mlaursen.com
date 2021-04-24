@@ -16,26 +16,26 @@
   "repository": "git@github.com:mlaursen/mlaursen.com.git",
   "author": "Mikkel Laursen <mlaursen03@gmail.com>",
   "dependencies": {
-    "@react-md/link": "^2.7.0",
-    "@react-md/theme": "^2.7.0",
-    "@react-md/typography": "^2.7.0",
-    "@react-md/utils": "^2.7.0",
-    "next": "^10.0.9",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "@react-md/link": "^2.8.2",
+    "@react-md/theme": "^2.8.2",
+    "@react-md/typography": "^2.8.2",
+    "@react-md/utils": "^2.8.2",
+    "next": "^10.1.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@mlaursen/eslint-config": "^1.1.2",
-    "@types/node": "^14.14.35",
+    "@mlaursen/eslint-config": "^1.1.3",
+    "@types/node": "^14.14.41",
     "@types/react": "^17.0.3",
-    "@types/react-dom": "^17.0.2",
-    "eslint": "^7.22.0",
+    "@types/react-dom": "^17.0.3",
+    "eslint": "^7.25.0",
     "gh-pages": "^3.1.0",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.4",
     "node-sass": "^5.0.0",
     "prettier": "^2.2.1",
-    "typescript": "^4.2.3"
+    "typescript": "^4.2.4"
   },
   "husky": {
     "hooks": {
