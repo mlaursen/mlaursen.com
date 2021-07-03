@@ -1,1 +1,3 @@
-module.exports = require('@mlaursen/eslint-config');
+module.exports = {
+  extends: ['@mlaursen/eslint-config', 'plugin:@next/next/recommended'],
+};
