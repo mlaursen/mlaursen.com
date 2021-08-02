@@ -257,10 +257,10 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/utils@^2.8.4":
-  version "2.8.4"
-  resolved "https://registry.yarnpkg.com/@react-md/utils/-/utils-2.8.4.tgz#9004b0662789459ddf8ccf2e8f649071a3dd07ef"
-  integrity sha512-fRYF8i+kh+wfu/yCy96w+IF7nn/RDQIGhldHpwEsfDgod3kU2TmTcGKrv/PqUg/Coa9EGfL7mtxA/sXKRLhHGQ==
+"@react-md/utils@^2.8.4", "@react-md/utils@^2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@react-md/utils/-/utils-2.9.1.tgz#7f6af871e46c1a38c1dcc6583beb1bcb5cc7d709"
+  integrity sha512-XxyMUl7r0Gwjg/kv11UM8TomdxgeUlK8wP2AxaMauY5Cv2WSs5SLUvjQZ9rki0ZlIx5CmfP/WrJFPW7Ik94yJA==
   dependencies:
     "@juggle/resize-observer" "^3.3.0"
     classnames "^2.3.1"
@@ -295,10 +295,10 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
 
-"@types/react-dom@^17.0.8":
-  version "17.0.8"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.8.tgz#3180de6d79bf53762001ad854e3ce49f36dd71fc"
-  integrity sha512-0ohAiJAx1DAUEcY9UopnfwCE9sSMDGnY/oXjWMax6g3RpzmTt2GMyMVAXcbn0mo8XAff0SbQJl2/SBU+hjSZ1A==
+"@types/react-dom@^17.0.9":
+  version "17.0.9"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.9.tgz#441a981da9d7be117042e1a6fd3dac4b30f55add"
+  integrity sha512-wIvGxLfgpVDSAMH5utdL9Ngm5Owu0VsGmldro3ORLXV8CShrL8awVj06NuEXFQ5xyaYfdca7Sgbk/50Ri1GdPg==
   dependencies:
     "@types/react" "*"
 
