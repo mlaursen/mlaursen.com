@@ -190,34 +190,34 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@react-md/link@^2.8.5":
-  version "2.8.5"
-  resolved "https://registry.yarnpkg.com/@react-md/link/-/link-2.8.5.tgz#f11d6ebf4aa41929f851f98cbb5f3fc0f3ad392e"
-  integrity sha512-NW9eud2Jvaf5vW3xNLHtko5wbCEWYw6YUdl5AhddjQIZfdtbl0fpKukZ09cVQBqEexYGtRvLZ8+utI13STB0qg==
+"@react-md/link@^2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@react-md/link/-/link-2.9.1.tgz#631635aec53f44e000cdf743502816bd51d2892f"
+  integrity sha512-XoycOch8K+H0m1UASKdo5RUYqT8LkvPFU6mHpWQEJkQf0lrt28mLTp3PhvLjbqSQov6/CCvrP0QnrJYlqOuJtA==
   dependencies:
-    "@react-md/states" "^2.8.5"
-    "@react-md/theme" "^2.8.4"
-    "@react-md/transition" "^2.8.5"
-    "@react-md/typography" "^2.8.4"
+    "@react-md/states" "^2.9.1"
+    "@react-md/theme" "^2.9.1"
+    "@react-md/transition" "^2.9.1"
+    "@react-md/typography" "^2.9.1"
     classnames "^2.3.1"
   optionalDependencies:
     prop-types "^15.6.2"
 
-"@react-md/portal@^2.8.3":
-  version "2.8.3"
-  resolved "https://registry.yarnpkg.com/@react-md/portal/-/portal-2.8.3.tgz#1c7310cd174fb83d28aa76c1bb19973a03e99163"
-  integrity sha512-tlIorfUgWvrlWwJVWYLd54o1CKkMzwhZ6DyuyVzch401+E0pShP87oV2rXu1JzLlyhykUbtUOZV+h3v+LMYxGg==
+"@react-md/portal@^2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@react-md/portal/-/portal-2.9.1.tgz#39d61040c53cd36ac39f85f83b3a199ea83c5059"
+  integrity sha512-nQGX9zk0L9L5Xo+2hVs4CEgmM5v3gsonWgc2E+LvPWtvp5oewcj2U/iDr2BzZ7cjyyM1FjXkYMmd/CaG+iY0Lg==
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/states@^2.8.5":
-  version "2.8.5"
-  resolved "https://registry.yarnpkg.com/@react-md/states/-/states-2.8.5.tgz#5ac3a74cc27f9b0510a8789371156c8e8e74b2d1"
-  integrity sha512-MNfmNMRqxJOH8kena6TttoEi6v8IhAqmqvvZfYNgIwHd8VgC6wwEkX+vUCtmBZ/tbS+qax0H9KRdphZyu70j4A==
+"@react-md/states@^2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@react-md/states/-/states-2.9.1.tgz#47dd7b82d26ce3da66477026172e63187a7ed1eb"
+  integrity sha512-GLnUQrvO45pZzPDPzA/13xiWXleXVLIXT+UOu97AFXzVtJuUbZ7e0DJEIpReWb2ZWUHDHIhie+4H3/zkdfPVUw==
   dependencies:
-    "@react-md/theme" "^2.8.4"
-    "@react-md/transition" "^2.8.5"
-    "@react-md/utils" "^2.8.4"
+    "@react-md/theme" "^2.9.1"
+    "@react-md/transition" "^2.9.1"
+    "@react-md/utils" "^2.9.1"
     classnames "^2.3.1"
     react-transition-group "^4.4.2"
   optionalDependencies:
@@ -232,21 +232,21 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/transition@^2.8.5":
-  version "2.8.5"
-  resolved "https://registry.yarnpkg.com/@react-md/transition/-/transition-2.8.5.tgz#bdaa4338813becd5cad423b2bd66070e63b524de"
-  integrity sha512-fk0yBRH2LR9NK8bvZGKyV3hgOQYfp4u5VLptvkhOQrKDL0eJoHrrRcUKzPLhgm2T0ESpVP+N/VJ0Wx5w1BGxzg==
+"@react-md/transition@^2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@react-md/transition/-/transition-2.9.1.tgz#a85b4becea574101a1d48c481f66140adec2182c"
+  integrity sha512-0LI/O8R57Z/2xEDqMs/7p+1xRRqaZPflYAhBqTVe9bSk5az4bmbVCabMBLNZ9OJ8/hDKlDCTyGNbgIbcvhyBwA==
   dependencies:
-    "@react-md/portal" "^2.8.3"
-    "@react-md/theme" "^2.8.4"
-    "@react-md/utils" "^2.8.4"
-    "@types/react-transition-group" "^4.4.1"
+    "@react-md/portal" "^2.9.1"
+    "@react-md/theme" "^2.9.1"
+    "@react-md/utils" "^2.9.1"
+    "@types/react-transition-group" "^4.4.2"
     classnames "^2.3.1"
     react-transition-group "^4.4.2"
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/typography@^2.8.4", "@react-md/typography@^2.9.1":
+"@react-md/typography@^2.9.1":
   version "2.9.1"
   resolved "https://registry.yarnpkg.com/@react-md/typography/-/typography-2.9.1.tgz#c5c358569b3598bae52285bff5c14e25e6efcc73"
   integrity sha512-BUaYMtPdViG7vvgATsrQFBSCaFpKgxES50FFZyj0QS8YFmVN744u9hP5my4HimXf7/vzTPYmCw8MjqotWtrNJQ==
@@ -302,10 +302,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-transition-group@^4.4.1":
-  version "4.4.1"
-  resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-4.4.1.tgz#e1a3cb278df7f47f17b5082b1b3da17170bd44b1"
-  integrity sha512-vIo69qKKcYoJ8wKCJjwSgCTM+z3chw3g18dkrDfVX665tMH7tmbDxEAnPdey4gTlwZz5QuHGzd+hul0OVZDqqQ==
+"@types/react-transition-group@^4.4.2":
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-4.4.2.tgz#38890fd9db68bf1f2252b99a942998dc7877c5b3"
+  integrity sha512-KibDWL6nshuOJ0fu8ll7QnV/LVTo3PzQ9aCPnRUYPfX7eZohHwLIdNHj7pftanREzHNP4/nJa8oeM73uSiavMQ==
   dependencies:
     "@types/react" "*"
 
