@@ -223,12 +223,12 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/theme@^2.8.4":
-  version "2.8.4"
-  resolved "https://registry.yarnpkg.com/@react-md/theme/-/theme-2.8.4.tgz#f85ba8557df728f5139cab85113be2a0e7248b3a"
-  integrity sha512-vZiNTvfl+hTpUxM0j5XQnfEhhWEArtT2xGffPg447dHRGPtJAmOEvJCGwoaE2ApN1XPUijjeZt52eWPGMl8Gyw==
+"@react-md/theme@^2.8.4", "@react-md/theme@^2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@react-md/theme/-/theme-2.9.1.tgz#03db64ee5d26e39ec5dd5cb2dd0a0b421c703f0b"
+  integrity sha512-pYaspp8manzbMIk6QGZHqzIBUXmYtYoWj38kxs+rdmAJzdzFEd9wIWsT7KUwUSx6cgruplwLhQKOLw277rkcAw==
   dependencies:
-    "@react-md/utils" "^2.8.4"
+    "@react-md/utils" "^2.9.1"
   optionalDependencies:
     prop-types ">= 15.6"
 
@@ -246,21 +246,21 @@
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/typography@^2.8.4":
-  version "2.8.4"
-  resolved "https://registry.yarnpkg.com/@react-md/typography/-/typography-2.8.4.tgz#38c07f075b46928d9b1113a35e0b23d140935dd3"
-  integrity sha512-222m1FkgcUWqFXNF6g3F//iVcB5ZoLzKfQ1FpMuXODaXcQltGVobTTJ7DL5z9k7Vn0RK5P8XbDrbfYaj+lWEkA==
+"@react-md/typography@^2.8.4", "@react-md/typography@^2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@react-md/typography/-/typography-2.9.1.tgz#c5c358569b3598bae52285bff5c14e25e6efcc73"
+  integrity sha512-BUaYMtPdViG7vvgATsrQFBSCaFpKgxES50FFZyj0QS8YFmVN744u9hP5my4HimXf7/vzTPYmCw8MjqotWtrNJQ==
   dependencies:
-    "@react-md/theme" "^2.8.4"
-    "@react-md/utils" "^2.8.4"
+    "@react-md/theme" "^2.9.1"
+    "@react-md/utils" "^2.9.1"
     classnames "^2.3.1"
   optionalDependencies:
     prop-types ">= 15.6"
 
-"@react-md/utils@^2.8.4":
-  version "2.8.4"
-  resolved "https://registry.yarnpkg.com/@react-md/utils/-/utils-2.8.4.tgz#9004b0662789459ddf8ccf2e8f649071a3dd07ef"
-  integrity sha512-fRYF8i+kh+wfu/yCy96w+IF7nn/RDQIGhldHpwEsfDgod3kU2TmTcGKrv/PqUg/Coa9EGfL7mtxA/sXKRLhHGQ==
+"@react-md/utils@^2.8.4", "@react-md/utils@^2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@react-md/utils/-/utils-2.9.1.tgz#7f6af871e46c1a38c1dcc6583beb1bcb5cc7d709"
+  integrity sha512-XxyMUl7r0Gwjg/kv11UM8TomdxgeUlK8wP2AxaMauY5Cv2WSs5SLUvjQZ9rki0ZlIx5CmfP/WrJFPW7Ik94yJA==
   dependencies:
     "@juggle/resize-observer" "^3.3.0"
     classnames "^2.3.1"
