@@ -1,16 +1,14 @@
-@import '~@react-md/theme/dist/color-palette';
+@use 'react-md' with (
+  $rmd-theme-dark-elevation: 'prefers-color-scheme'
+);
 
-$rmd-theme-dark-elevation: 'prefers-color-scheme';
-
-@import '~@react-md/link/dist/mixins';
-@import '~@react-md/theme/dist/mixins';
-@import '~@react-md/typography/dist/mixins';
-@import '~@react-md/utils/dist/mixins';
-
-@include react-md-utils;
+@include react-md.rmd-utils-base;
+@include react-md.react-md-theme;
+@include react-md.react-md-typography;
+@include react-md.react-md-link;
 
 @media (prefers-color-scheme: dark) {
   :root {
-    @include rmd-theme-dark;
+    @include react-md.rmd-theme-dark;
   }
 }
