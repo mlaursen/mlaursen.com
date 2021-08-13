@@ -1,14 +1,14 @@
-@use 'react-md' with (
+@use 'react-md' as * with (
   $rmd-theme-dark-elevation: 'prefers-color-scheme'
 );
 
-@include react-md.rmd-utils-base;
-@include react-md.react-md-theme;
-@include react-md.react-md-typography;
-@include react-md.react-md-link;
+@include rmd-utils-base;
+@include react-md-theme;
+@include react-md-typography;
+@include react-md-link;
 
 @media (prefers-color-scheme: dark) {
   :root {
-    @include react-md.rmd-theme-dark;
+    @include rmd-theme-dark;
   }
 }
