@@ -21,3 +21,12 @@ node_modules/
 # Next.js build output
 /.next/
 /out/
+
+# Yarn Berry
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
