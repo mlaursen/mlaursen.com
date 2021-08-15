@@ -298,15 +298,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-md/alert@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/alert@npm:3.0.0"
+"@react-md/alert@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/alert@npm:3.0.1"
   dependencies:
-    "@react-md/button": ^3.0.0
-    "@react-md/elevation": ^3.0.0
+    "@react-md/button": ^3.0.1
+    "@react-md/elevation": ^3.0.1
     "@react-md/portal": ^3.0.0
     "@react-md/theme": ^3.0.0
-    "@react-md/transition": ^3.0.0
+    "@react-md/transition": ^3.0.1
     "@react-md/typography": ^3.0.0
     "@react-md/utils": ^3.0.0
     classnames: ^2.3.1
@@ -314,19 +314,20 @@ __metadata:
     react-transition-group: ^4.4.2
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: 35db762932b706b1d239c1f957d6cbbd3abd5e405af27e2fbefd3848d248fcc8762115fd774530ff1ad18bc70ca8158e7a32833c523821944483ff509a2e3a67
+  checksum: 4f3ad27151a6e025de8e684aa22ed96f66b4074ec226c53545def8abe305d217a80f8c7ae8c459f45d6948f96bc3e46e8372db91de6f896c4a28ecb1986129f1
   languageName: node
   linkType: hard
 
-"@react-md/app-bar@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/app-bar@npm:3.0.0"
+"@react-md/app-bar@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/app-bar@npm:3.0.1"
   dependencies:
-    "@react-md/button": ^3.0.0
-    "@react-md/elevation": ^3.0.0
+    "@react-md/button": ^3.0.1
+    "@react-md/elevation": ^3.0.1
     "@react-md/icon": ^3.0.0
     "@react-md/theme": ^3.0.0
     "@react-md/typography": ^3.0.0
@@ -335,33 +336,35 @@ __metadata:
     prop-types: ">= 15.6"
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8.0"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: 4c7debf31b85efc5be75ac24869778858f419f8b7e4c811cf0890559d6915b004cd1d373f8534c097f67cd1f8126ef5024056261abfc09d51c4e5d3eb878fe35
+  checksum: 4f1d5b6edee8bfc73d00619690ad8f4a5f5d2e6044ea1c38df4949b2333d93597d1f97864ce6afa1a250b7a745a449634bad50637744f63dd28744a6c4bc9218
   languageName: node
   linkType: hard
 
-"@react-md/autocomplete@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/autocomplete@npm:3.0.0"
+"@react-md/autocomplete@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/autocomplete@npm:3.0.1"
   dependencies:
-    "@react-md/form": ^3.0.0
-    "@react-md/list": ^3.0.0
+    "@react-md/form": ^3.0.1
+    "@react-md/list": ^3.0.1
     "@react-md/portal": ^3.0.0
-    "@react-md/states": ^3.0.0
+    "@react-md/states": ^3.0.1
     "@react-md/theme": ^3.0.0
-    "@react-md/transition": ^3.0.0
+    "@react-md/transition": ^3.0.1
     "@react-md/typography": ^3.0.0
     "@react-md/utils": ^3.0.0
     classnames: ^2.3.1
     prop-types: ">= 15.6"
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: b41ad0983609751fb0fa8a02b41ed28cf0b635766314b926b11adea0f90e743bf16b8edf12b1ee79f28ce1b75412de880fb3c65b120b5a89d14c619592b7d75e
+  checksum: 04f3793ed77c8342406711d5f0fd2d2d4d1db8f744af6fab8790510239484cc50b5d21b7ada745f7cd95c19194500f7ae3f1ec9c90dc3e5673eb064f938b5737
   languageName: node
   linkType: hard
 
@@ -383,11 +386,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-md/badge@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/badge@npm:3.0.0"
+"@react-md/badge@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/badge@npm:3.0.1"
   dependencies:
-    "@react-md/button": ^3.0.0
+    "@react-md/button": ^3.0.1
     "@react-md/icon": ^3.0.0
     "@react-md/theme": ^3.0.0
     "@react-md/typography": ^3.0.0
@@ -396,43 +399,45 @@ __metadata:
     prop-types: ">= 15.6"
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8.0"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: ee7be14279a20a1e3f3355dbe60d9741a06f55eebeb73ac8e187afd04709fbfd58c6578a7f386c2cffc9204ea5e9c83c06a2043ad68e3a996a84055876ca8270
+  checksum: aec1f09d576477e0b2abd0393e1a1ae1e143ec5a5a7ffea7ca5bd68108a426c1eea8161151430824c10b083c0d7f5c40a4642cd3b37f86e5cd29bc89898d0943
   languageName: node
   linkType: hard
 
-"@react-md/button@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/button@npm:3.0.0"
+"@react-md/button@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/button@npm:3.0.1"
   dependencies:
-    "@react-md/elevation": ^3.0.0
+    "@react-md/elevation": ^3.0.1
     "@react-md/icon": ^3.0.0
-    "@react-md/states": ^3.0.0
+    "@react-md/states": ^3.0.1
     "@react-md/theme": ^3.0.0
-    "@react-md/transition": ^3.0.0
+    "@react-md/transition": ^3.0.1
     "@react-md/typography": ^3.0.0
     "@react-md/utils": ^3.0.0
     classnames: ^2.3.1
     prop-types: ">= 15.6"
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: 26246fa1d1af6bef3adb5ef8bb759f5863adc4fcf53a87d412f54bd808811d615d2c4ade43ecb9e2650c8eda075105d97b0d2f21db7d1f228a7d670864896e07
+  checksum: cac432fc59be03d2cd9ef63a9d33a0dd00325996bfb25f6680f1ed8d21ac4a167d86858d53ed09c23e21308ec4830bc2a2f0016f42a07363c26998f6b1caed2c
   languageName: node
   linkType: hard
 
-"@react-md/card@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/card@npm:3.0.0"
+"@react-md/card@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/card@npm:3.0.1"
   dependencies:
     "@react-md/divider": ^3.0.0
-    "@react-md/elevation": ^3.0.0
+    "@react-md/elevation": ^3.0.1
     "@react-md/icon": ^3.0.0
-    "@react-md/states": ^3.0.0
+    "@react-md/states": ^3.0.1
     "@react-md/theme": ^3.0.0
     "@react-md/typography": ^3.0.0
     "@react-md/utils": ^3.0.0
@@ -440,20 +445,21 @@ __metadata:
     prop-types: ">= 15.6"
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8.0"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: 950af6dabd767fbd0099f334b0ba9576a5d24ca97495e9e0e69e281f27f442ea4edbb71cec2e673ae2304d88255eb189391c0a45245ca4e42abc941631e4196a
+  checksum: 181f13003f91e8273ace9c4d2959d5846cd4644110716d695d9a845d71d1c013fd29d2ec1375c952b2096500d073239a6da3ad0741fb390385319346eb2a0bc0
   languageName: node
   linkType: hard
 
-"@react-md/chip@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/chip@npm:3.0.0"
+"@react-md/chip@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/chip@npm:3.0.1"
   dependencies:
-    "@react-md/elevation": ^3.0.0
+    "@react-md/elevation": ^3.0.1
     "@react-md/icon": ^3.0.0
-    "@react-md/states": ^3.0.0
+    "@react-md/states": ^3.0.1
     "@react-md/theme": ^3.0.0
     "@react-md/typography": ^3.0.0
     "@react-md/utils": ^3.0.0
@@ -461,23 +467,24 @@ __metadata:
     prop-types: ">= 15.6"
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8.0"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: 5a59c73eae63afd60c1405da81f2edb33a0e2c99354179b51fad3d8709e0a997bf85bfc7aea04afa0b2c83e16d486d1c914b0d2731bda801d6ef30b58e0486f1
+  checksum: 01c10fbdea2ae4bbdd3517c4f7a22eb7dcc5c17f86f8920f25fe09527c80ed930df654a1482cc975b7a43a5342ea73ca6c257823388bf8b9dd3c55673818cb74
   languageName: node
   linkType: hard
 
-"@react-md/dialog@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/dialog@npm:3.0.0"
+"@react-md/dialog@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/dialog@npm:3.0.1"
   dependencies:
-    "@react-md/app-bar": ^3.0.0
-    "@react-md/elevation": ^3.0.0
-    "@react-md/overlay": ^3.0.0
+    "@react-md/app-bar": ^3.0.1
+    "@react-md/elevation": ^3.0.1
+    "@react-md/overlay": ^3.0.1
     "@react-md/portal": ^3.0.0
     "@react-md/theme": ^3.0.0
-    "@react-md/transition": ^3.0.0
+    "@react-md/transition": ^3.0.1
     "@react-md/typography": ^3.0.0
     "@react-md/utils": ^3.0.0
     classnames: ^2.3.1
@@ -485,10 +492,11 @@ __metadata:
     react-transition-group: ^4.4.2
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: 5fb4f4ec4b0e22318e4f1076fb985f1fce47dc8cbbff7079793f04988c9cbe2894a962adf1b18c39ea288e76bffca6a34858c7bfaab09829c316a8d13c48fbb8
+  checksum: 0649a9039e54d932edc8c29d6f7629a59a688b74428e3fbf148c9654438513585e27bb95147af858e2a238ad0410ecc270bd7b16e9f306ccd981053e5c94fa79
   languageName: node
   linkType: hard
 
@@ -509,51 +517,55 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-md/elevation@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/elevation@npm:3.0.0"
+"@react-md/elevation@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/elevation@npm:3.0.1"
   dependencies:
     "@react-md/theme": ^3.0.0
-    "@react-md/transition": ^3.0.0
+    "@react-md/transition": ^3.0.1
     "@react-md/utils": ^3.0.0
-  checksum: b7770966b43f71f2837251b57eb86b396ce39cc007816b5827ab7086bd7dc2a3c5646653a36c6b81be46cb6e4ecab6f455327c4403ecbe8b2e0b13cda00bb520
+  peerDependencies:
+    react: ">= 16.8.0"
+    react-dom: ">= 16.8.0"
+  checksum: 41876e8ae75769de7113c3986b0709fcdc851fb366b74a47eea96d1e762c9c2e74784dcbaa2b258fce5a060c97ec1eae07613264e391db3637a7b3c43f5cb137
   languageName: node
   linkType: hard
 
-"@react-md/expansion-panel@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/expansion-panel@npm:3.0.0"
+"@react-md/expansion-panel@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/expansion-panel@npm:3.0.1"
   dependencies:
-    "@react-md/button": ^3.0.0
-    "@react-md/card": ^3.0.0
+    "@react-md/button": ^3.0.1
+    "@react-md/card": ^3.0.1
     "@react-md/icon": ^3.0.0
     "@react-md/theme": ^3.0.0
-    "@react-md/transition": ^3.0.0
+    "@react-md/transition": ^3.0.1
     "@react-md/utils": ^3.0.0
     classnames: ^2.3.1
     prop-types: ">= 15.6"
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: eb40eaa03a5328765661fe1ca16e1284a9c9e3ce56cafe84392652a97757f65c7d89053aca493bb131d19ad7fb51287c79dffcba816c1e6c3a0016f72f06e326
+  checksum: 30859f44281a6618485f6a9175e2a2a9fe47db570b26e004b52bcb637852a22bc04f76fe95bceedcf65e932046f11535bfdc9af4fc3b68a04c420284287de519
   languageName: node
   linkType: hard
 
-"@react-md/form@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/form@npm:3.0.0"
+"@react-md/form@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/form@npm:3.0.1"
   dependencies:
-    "@react-md/button": ^3.0.0
+    "@react-md/button": ^3.0.1
     "@react-md/icon": ^3.0.0
-    "@react-md/list": ^3.0.0
+    "@react-md/list": ^3.0.1
     "@react-md/portal": ^3.0.0
-    "@react-md/progress": ^3.0.0
-    "@react-md/states": ^3.0.0
+    "@react-md/progress": ^3.0.1
+    "@react-md/states": ^3.0.1
     "@react-md/theme": ^3.0.0
-    "@react-md/tooltip": ^3.0.0
-    "@react-md/transition": ^3.0.0
+    "@react-md/tooltip": ^3.0.1
+    "@react-md/transition": ^3.0.1
     "@react-md/typography": ^3.0.0
     "@react-md/utils": ^3.0.0
     classnames: ^2.3.1
@@ -561,10 +573,11 @@ __metadata:
     prop-types: ">= 15.6"
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: 2f32aa5306edc589040b288dc540b8bd3c47799b919dccce523dadd2b4d5045d9822d5d850f6049cbaad08df9e6b10c49c8f51d8ae8bcf7fced30b9107af3743
+  checksum: 545430a55d27cb78e545636d980b64c7a3efe3bb75465ad1ff868bcf8f9a687420ad783647ac6192944d4278c3c1f0188dc01d245cfd109bcf95b9f7bf5fba48
   languageName: node
   linkType: hard
 
@@ -586,63 +599,65 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-md/layout@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/layout@npm:3.0.0"
+"@react-md/layout@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/layout@npm:3.0.1"
   dependencies:
-    "@react-md/app-bar": ^3.0.0
-    "@react-md/dialog": ^3.0.0
+    "@react-md/app-bar": ^3.0.1
+    "@react-md/dialog": ^3.0.1
     "@react-md/divider": ^3.0.0
-    "@react-md/form": ^3.0.0
+    "@react-md/form": ^3.0.1
     "@react-md/icon": ^3.0.0
-    "@react-md/link": ^3.0.0
-    "@react-md/list": ^3.0.0
-    "@react-md/sheet": ^3.0.0
-    "@react-md/states": ^3.0.0
+    "@react-md/link": ^3.0.1
+    "@react-md/list": ^3.0.1
+    "@react-md/sheet": ^3.0.1
+    "@react-md/states": ^3.0.1
     "@react-md/theme": ^3.0.0
-    "@react-md/tooltip": ^3.0.0
-    "@react-md/transition": ^3.0.0
-    "@react-md/tree": ^3.0.0
+    "@react-md/tooltip": ^3.0.1
+    "@react-md/transition": ^3.0.1
+    "@react-md/tree": ^3.0.1
     "@react-md/typography": ^3.0.0
     "@react-md/utils": ^3.0.0
     classnames: ^2.3.1
     prop-types: ">= 15.6"
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: 40e5934b3b191dcb7ad0d76e7e36c2b5839c420c924adf95fca2aa6dd99a2f105fb655a7324c2ff347b26dd3a1684b69df345c5130e7cb60ca5e70fe852d7f7b
+  checksum: 789b22bf1b298883e27271209a3977758358438d581152eef0e1b1a64d3396b57e01cc3f8ef4506150fc2ebb3b13add9c86df8fcd12d4b0225549b09d022923d
   languageName: node
   linkType: hard
 
-"@react-md/link@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/link@npm:3.0.0"
+"@react-md/link@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/link@npm:3.0.1"
   dependencies:
-    "@react-md/states": ^3.0.0
+    "@react-md/states": ^3.0.1
     "@react-md/theme": ^3.0.0
-    "@react-md/transition": ^3.0.0
+    "@react-md/transition": ^3.0.1
     "@react-md/typography": ^3.0.0
     classnames: ^2.3.1
     prop-types: ^15.6.2
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: 6af47503b4442a249cd6cb2ba7d7b8466b4e4c7b2694745fd73e3bd1a8c0dcdafde35ba06e98c642dcd87097d3d5ec48f6af5cf9b963eff6ad9397385cc7c0a1
+  checksum: acefbd23c547845d56214dd3e7c854c8dcfc166a45ee5e72f828a9c6c2340de0f163ce92e4c4d6885a3e3fe89993cfd0e75c9da248f32c9b605e022d936df52a
   languageName: node
   linkType: hard
 
-"@react-md/list@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/list@npm:3.0.0"
+"@react-md/list@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/list@npm:3.0.1"
   dependencies:
     "@react-md/avatar": ^3.0.0
     "@react-md/divider": ^3.0.0
     "@react-md/icon": ^3.0.0
-    "@react-md/states": ^3.0.0
+    "@react-md/states": ^3.0.1
     "@react-md/theme": ^3.0.0
     "@react-md/typography": ^3.0.0
     "@react-md/utils": ^3.0.0
@@ -650,10 +665,11 @@ __metadata:
     prop-types: ">= 15.6"
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8.0"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: 6bf00272efc23b22f327e7d2ba89d549a5887b5972c8d49816f96cd48746630576258b278914983488c1a6dae185556cb06796e57356928d2cc27dab283e207f
+  checksum: ab7599d870252e0812ff137e0f6f3cdf7c361353256019d1af12ef3e6192a909e7a8d2e97c17851c66d1cb4f390772524509795d263a68ec3e24ab14352af489
   languageName: node
   linkType: hard
 
@@ -685,17 +701,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-md/menu@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/menu@npm:3.0.0"
+"@react-md/menu@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/menu@npm:3.0.1"
   dependencies:
-    "@react-md/app-bar": ^3.0.0
-    "@react-md/button": ^3.0.0
+    "@react-md/app-bar": ^3.0.1
+    "@react-md/button": ^3.0.1
     "@react-md/divider": ^3.0.0
-    "@react-md/elevation": ^3.0.0
+    "@react-md/elevation": ^3.0.1
     "@react-md/icon": ^3.0.0
-    "@react-md/list": ^3.0.0
-    "@react-md/states": ^3.0.0
+    "@react-md/list": ^3.0.1
+    "@react-md/states": ^3.0.1
     "@react-md/theme": ^3.0.0
     "@react-md/typography": ^3.0.0
     "@react-md/utils": ^3.0.0
@@ -703,30 +719,32 @@ __metadata:
     prop-types: ">= 15.6"
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8.0"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: b8637f7bdd45f57166ebafdb005f4a7f2f936c1842a3c433da188279b9c62166f4a8025e113b4e9b201b398afc31033ebd292172fe359e0f203c441392016f6b
+  checksum: 884c1b7956ca97c3932e8bac6c3d896aa56f745f97348a2d29c922a87e59ad9e10e4112e2bca72025f01d205bb92f895563b3f09567fb90b5fb78958608a83a1
   languageName: node
   linkType: hard
 
-"@react-md/overlay@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/overlay@npm:3.0.0"
+"@react-md/overlay@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/overlay@npm:3.0.1"
   dependencies:
     "@react-md/portal": ^3.0.0
     "@react-md/theme": ^3.0.0
-    "@react-md/transition": ^3.0.0
+    "@react-md/transition": ^3.0.1
     "@react-md/utils": ^3.0.0
     classnames: ^2.3.1
     prop-types: ">= 15.6"
     react-transition-group: ^4.4.2
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: fe5c0599c2ce5f4f6b6355f681cf9abbecf250b12b958acce36870511f5c6b0f9a5faa6b72149c201a9d82ee63830c111228a07b17b085f37d374345c39c6e5c
+  checksum: 46971a587d6cc1c7a6b74048d71d82930215e21179be2325f59a41afdc9089b64e5cf7ea907644dee5d2a166b25c0909ba1a9dbfccc4539bd543af28d72fc462
   languageName: node
   linkType: hard
 
@@ -745,93 +763,97 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-md/progress@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/progress@npm:3.0.0"
+"@react-md/progress@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/progress@npm:3.0.1"
   dependencies:
     "@react-md/theme": ^3.0.0
-    "@react-md/transition": ^3.0.0
+    "@react-md/transition": ^3.0.1
     "@react-md/utils": ^3.0.0
     classnames: ^2.3.1
     prop-types: ">= 15.6"
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: c76d422c1ec946997592536ad784714340e2d9d5b61e96a16938fb20cfe40e6824d66c09c54dbb2fb3bcee61e010aeec2a4652876d5cfb44adebed02f1fddbcd
+  checksum: de52b405868a326f6d6e1e5f5c800c8b27497235216fdfcd3773d1b290d74bd46c3690132fc6d2fdeb8c13f4f5e5535f4547edda2d8f0b1eadee75e59f3d5477
   languageName: node
   linkType: hard
 
-"@react-md/sheet@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/sheet@npm:3.0.0"
+"@react-md/sheet@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/sheet@npm:3.0.1"
   dependencies:
-    "@react-md/dialog": ^3.0.0
-    "@react-md/elevation": ^3.0.0
-    "@react-md/overlay": ^3.0.0
+    "@react-md/dialog": ^3.0.1
+    "@react-md/elevation": ^3.0.1
+    "@react-md/overlay": ^3.0.1
     "@react-md/theme": ^3.0.0
-    "@react-md/transition": ^3.0.0
+    "@react-md/transition": ^3.0.1
     "@react-md/utils": ^3.0.0
     classnames: ^2.3.1
     prop-types: ">= 15.6"
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: 90da7e8478e6575d5e89688742dce9e02fb80f4a8bd2d5df900e5c102286c428f13a5c0724bbdffffc16f80c9d2005412451bf605a501e6db9965af88e8d6253
+  checksum: d87831f5c97812cce6cab904c4da8dd30b517d8d877bdb1b83a822566faee225c3271c4bf3139c3d3ea13db6d28a71a4528140359dc1a1701a332faf00f48f93
   languageName: node
   linkType: hard
 
-"@react-md/states@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/states@npm:3.0.0"
+"@react-md/states@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/states@npm:3.0.1"
   dependencies:
     "@react-md/theme": ^3.0.0
-    "@react-md/transition": ^3.0.0
+    "@react-md/transition": ^3.0.1
     "@react-md/utils": ^3.0.0
     classnames: ^2.3.1
     prop-types: ">= 15.6"
     react-transition-group: ^4.4.2
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: c67dd9c60bc3db8b1bd4fca69ea0e5218cc462c778ef438c275693f7306b804a609bf6dc2a7364cfd19681860fbc034af6711b29b000b0c0b8f66f568c061430
+  checksum: 4f977b565217901a1cb2cc267471f75f7841ae091558f2ff0270a92391fd28271a456aac2692d25aaf3e31022f7240b839f31edf8bba44f7b31f996ee47d3def
   languageName: node
   linkType: hard
 
-"@react-md/table@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/table@npm:3.0.0"
+"@react-md/table@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/table@npm:3.0.1"
   dependencies:
     "@react-md/divider": ^3.0.0
-    "@react-md/form": ^3.0.0
+    "@react-md/form": ^3.0.1
     "@react-md/theme": ^3.0.0
-    "@react-md/transition": ^3.0.0
+    "@react-md/transition": ^3.0.1
     "@react-md/typography": ^3.0.0
     "@react-md/utils": ^3.0.0
     classnames: ^2.3.1
     prop-types: ">= 15.6"
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: 64517e4a11eadcf61dbcea5947a7b535735d751c6079455921f29586e38d6f2ba98b07059e6187569ca3d9d06ed54e3381ea83a5adba90a5d1f7b7695389a621
+  checksum: a6f4e0beeb7ec3a608b5d35eea225b47febdcaeae6740db00f54da4ef6aaa66bc4786ec67153e4b802260c28309e3835a86750d530bb732ac25f22fb1424aaef
   languageName: node
   linkType: hard
 
-"@react-md/tabs@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/tabs@npm:3.0.0"
+"@react-md/tabs@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/tabs@npm:3.0.1"
   dependencies:
     "@react-md/icon": ^3.0.0
-    "@react-md/states": ^3.0.0
+    "@react-md/states": ^3.0.1
     "@react-md/theme": ^3.0.0
-    "@react-md/transition": ^3.0.0
+    "@react-md/transition": ^3.0.1
     "@react-md/typography": ^3.0.0
     "@react-md/utils": ^3.0.0
     classnames: ^2.3.1
@@ -839,10 +861,11 @@ __metadata:
     react-transition-group: ^4.4.2
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: d453e1b5306ba8b81f382d0e4c0bc50488d256a9a2fbd3b6fd4d7753b708defdf2f00877807d7788dd6f4f5357cce71b10d851032ede8e68fd3e503f1f8020a1
+  checksum: c274daf1de7b4a982ee37bf3b9ef8baf9eed05eab8b1f3af6578221a9afe4ba36af3bd6b08a3a857c287c3b31e6b66f61e5b4af3c1384655a543a82561cb0b1b
   languageName: node
   linkType: hard
 
@@ -861,13 +884,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-md/tooltip@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/tooltip@npm:3.0.0"
+"@react-md/tooltip@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/tooltip@npm:3.0.1"
   dependencies:
     "@react-md/portal": ^3.0.0
     "@react-md/theme": ^3.0.0
-    "@react-md/transition": ^3.0.0
+    "@react-md/transition": ^3.0.1
     "@react-md/typography": ^3.0.0
     "@react-md/utils": ^3.0.0
     classnames: ^2.3.1
@@ -875,16 +898,17 @@ __metadata:
     react-transition-group: ^4.4.2
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: 791f35c96961f57c87bbd3f2e67e5e0c43d9ce4254221ed46b4728a8d78708d8518dd112d6e4061d6c3e855391babd3ea75d4bc8a7a017799074d75603c81f76
+  checksum: 8659a5817e73b7b84ec2b422f0ca349c450c71e2556232c7ba567a0f667ad82f10aa5c3eadbfaca09211c9195219c40f8f0dac52e38011e7471dbd27b913e0a4
   languageName: node
   linkType: hard
 
-"@react-md/transition@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/transition@npm:3.0.0"
+"@react-md/transition@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/transition@npm:3.0.1"
   dependencies:
     "@react-md/portal": ^3.0.0
     "@react-md/theme": ^3.0.0
@@ -895,30 +919,32 @@ __metadata:
     react-transition-group: ^4.4.2
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: dd576d2a9786503ff68a290cad7d4a02c768269e715fa60ee121a6d726e547d1bc26725617dc00f47352438f2b2bf132161ffda7a94ab07925e8a21a42e29103
+  checksum: 1fe6032c7605f5c1e6e418bd96b2ad5d7be34fafe71c8e5fbdc46c66ab46a0bbd8a839bd445846dd661c6d75837c95eb8ddddd7fd0feac7d62a8faa38ec188e4
   languageName: node
   linkType: hard
 
-"@react-md/tree@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-md/tree@npm:3.0.0"
+"@react-md/tree@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-md/tree@npm:3.0.1"
   dependencies:
     "@react-md/icon": ^3.0.0
-    "@react-md/list": ^3.0.0
+    "@react-md/list": ^3.0.1
     "@react-md/theme": ^3.0.0
-    "@react-md/transition": ^3.0.0
+    "@react-md/transition": ^3.0.1
     "@react-md/utils": ^3.0.0
     classnames: ^2.3.1
     prop-types: ">= 15.6"
   peerDependencies:
     react: ">= 16.8"
+    react-dom: ">= 16.8"
   dependenciesMeta:
     prop-types:
       optional: true
-  checksum: ae3c6b13da9f080c025c457d9099a8c71c4ac6926054f21de4e5575786c00558af982f0386f842ce71ecb55e67e3e61c69e988a1faee05bb6a4fa5f081ecf07a
+  checksum: 4d845760761e17f248f9a52e8df77f129fdda2daff9eabb55d92d6ab5a31c4f85d742440f28d4466357854f831c68d0ce4487e55a0be2210b5b5fa4ac74cad7a
   languageName: node
   linkType: hard
 
@@ -4117,7 +4143,7 @@ fsevents@~2.3.1:
     prettier: ^2.3.2
     react: ^17.0.2
     react-dom: ^17.0.2
-    react-md: ^3.0.0
+    react-md: ^3.0.1
     sass: ^1.37.5
     typescript: ^4.3.5
   languageName: unknown
@@ -4968,46 +4994,47 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"react-md@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "react-md@npm:3.0.0"
+"react-md@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "react-md@npm:3.0.1"
   dependencies:
-    "@react-md/alert": ^3.0.0
-    "@react-md/app-bar": ^3.0.0
-    "@react-md/autocomplete": ^3.0.0
+    "@react-md/alert": ^3.0.1
+    "@react-md/app-bar": ^3.0.1
+    "@react-md/autocomplete": ^3.0.1
     "@react-md/avatar": ^3.0.0
-    "@react-md/badge": ^3.0.0
-    "@react-md/button": ^3.0.0
-    "@react-md/card": ^3.0.0
-    "@react-md/chip": ^3.0.0
-    "@react-md/dialog": ^3.0.0
+    "@react-md/badge": ^3.0.1
+    "@react-md/button": ^3.0.1
+    "@react-md/card": ^3.0.1
+    "@react-md/chip": ^3.0.1
+    "@react-md/dialog": ^3.0.1
     "@react-md/divider": ^3.0.0
-    "@react-md/elevation": ^3.0.0
-    "@react-md/expansion-panel": ^3.0.0
-    "@react-md/form": ^3.0.0
+    "@react-md/elevation": ^3.0.1
+    "@react-md/expansion-panel": ^3.0.1
+    "@react-md/form": ^3.0.1
     "@react-md/icon": ^3.0.0
-    "@react-md/layout": ^3.0.0
-    "@react-md/link": ^3.0.0
-    "@react-md/list": ^3.0.0
+    "@react-md/layout": ^3.0.1
+    "@react-md/link": ^3.0.1
+    "@react-md/list": ^3.0.1
     "@react-md/material-icons": ^3.0.0
     "@react-md/media": ^3.0.0
-    "@react-md/menu": ^3.0.0
-    "@react-md/overlay": ^3.0.0
+    "@react-md/menu": ^3.0.1
+    "@react-md/overlay": ^3.0.1
     "@react-md/portal": ^3.0.0
-    "@react-md/progress": ^3.0.0
-    "@react-md/sheet": ^3.0.0
-    "@react-md/states": ^3.0.0
-    "@react-md/table": ^3.0.0
-    "@react-md/tabs": ^3.0.0
+    "@react-md/progress": ^3.0.1
+    "@react-md/sheet": ^3.0.1
+    "@react-md/states": ^3.0.1
+    "@react-md/table": ^3.0.1
+    "@react-md/tabs": ^3.0.1
     "@react-md/theme": ^3.0.0
-    "@react-md/tooltip": ^3.0.0
-    "@react-md/transition": ^3.0.0
-    "@react-md/tree": ^3.0.0
+    "@react-md/tooltip": ^3.0.1
+    "@react-md/transition": ^3.0.1
+    "@react-md/tree": ^3.0.1
     "@react-md/typography": ^3.0.0
     "@react-md/utils": ^3.0.0
   peerDependencies:
     react: ">= 16.8"
-  checksum: 04e908177895367aaa4a4b8669ed251bf89b0e6dbe24b8643e6fb546adcf90c64e5540601e1f26fef7f70a007e37864c549a42ca05d7e50443407a0dbc966503
+    react-dom: ">= 16.8"
+  checksum: eb678d09b696c23cf7e0568d5cb054ab53c1faad319ba4cae227b424899d15c6a5983735251e9ecaa0a0ea4ee7f6b46d2b7f3ae900ff9dfa407c80a2d279817f
   languageName: node
   linkType: hard
 
