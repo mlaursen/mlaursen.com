@@ -17,24 +17,24 @@
   "repository": "git@github.com:mlaursen/mlaursen.com.git",
   "author": "Mikkel Laursen <mlaursen03@gmail.com>",
   "dependencies": {
-    "next": "^11.1.0",
+    "next": "^11.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-md": "^3.0.0"
+    "react-md": "^3.0.1"
   },
   "devDependencies": {
     "@mlaursen/eslint-config": "^1.1.4",
-    "@types/node": "^16.6.0",
-    "@types/react": "^17.0.17",
+    "@types/node": "^16.7.12",
+    "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
     "eslint": "^7.32.0",
-    "eslint-config-next": "^11.1.0",
+    "eslint-config-next": "^11.1.2",
     "gh-pages": "^3.2.3",
-    "husky": "^7.0.1",
+    "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2",
-    "sass": "^1.37.5",
-    "typescript": "^4.3.5"
+    "sass": "^1.39.0",
+    "typescript": "^4.4.2"
   },
   "lint-staged": {
     "**/*.md": [
