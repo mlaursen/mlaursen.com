@@ -23,7 +23,7 @@
     "react-md": "^3.0.1"
   },
   "devDependencies": {
-    "@mlaursen/eslint-config": "^1.1.4",
+    "@mlaursen/eslint-config": "^1.1.5",
     "@types/node": "^16.7.12",
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
