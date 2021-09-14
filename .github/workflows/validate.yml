@@ -5,22 +5,22 @@ name: Validate
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   validate:
     name: Validate Using Node 14
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v2.3.4
 
-    - name: Run Lint and Typecheck
-      uses: actions/setup-node@v2.4.0
-      with:
-        node-version: 14
-        cache: yarn
+      - name: Run Lint and Typecheck
+        uses: actions/setup-node@v2.4.0
+        with:
+          node-version: 14
+          cache: yarn
 
-    - run: yarn
-    - run: yarn lint
-    - run: yarn typecheck
-    - run: yarn build
+      - run: yarn
+      - run: yarn lint
+      - run: yarn typecheck
+      - run: yarn build

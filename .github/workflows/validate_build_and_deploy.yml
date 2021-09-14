@@ -5,29 +5,29 @@ name: Validate, Build, and Deploy
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
     name: Validate and Build
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.3.4
-      with:
-        persist-credentials: false
+      - uses: actions/checkout@v2.3.4
+        with:
+          persist-credentials: false
 
-    - name: Validate and Build
-      uses: actions/setup-node@v2.4.0
-      with:
-        node-version: 14
-        cache: yarn
-    - run: yarn
-    - run: yarn lint
-    - run: yarn typecheck
-    - run: yarn predeploy
+      - name: Validate and Build
+        uses: actions/setup-node@v2.4.0
+        with:
+          node-version: 14
+          cache: yarn
+      - run: yarn
+      - run: yarn lint
+      - run: yarn typecheck
+      - run: yarn predeploy
 
-    - name: Deploy to gh-pages
-      uses: JamesIves/github-pages-deploy-action@4.1.5
-      with:
-        branch: gh-pages
-        folder: out
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: gh-pages
+          folder: out
