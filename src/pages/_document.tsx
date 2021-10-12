@@ -4,7 +4,7 @@ import Document, { Head, Main, NextScript, Html } from "next/document";
 export default class MyDocument extends Document {
   public render(): ReactElement {
     return (
-      <Html lang="en" dir="lrt">
+      <Html lang="en" dir="ltr">
         <Head>
           <meta name="theme-color" content="#000000" />
           <meta name="og:title" content="Mikkel Laursen" />
