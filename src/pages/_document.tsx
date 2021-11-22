@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import type { ReactElement } from "react";
 import Document, { Head, Main, NextScript, Html } from "next/document";
 
 export default class MyDocument extends Document {

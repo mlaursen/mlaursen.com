@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import type { ReactElement } from "react";
 import { Link } from "@react-md/link";
 import { TextContainer, Text } from "@react-md/typography";
 

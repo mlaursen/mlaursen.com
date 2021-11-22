@@ -1,3 +1,4 @@
+/** @type {import('next').NextConfig} */
 module.exports = {
   eslint: {
     // I have already run lint before this step...
