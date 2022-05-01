@@ -10,7 +10,7 @@ export default function Home(): ReactElement {
       <Typography type="headline-2" margin="none">
         Hello,
       </Typography>
-      <Typography type="headline-4">
+      <Typography type="headline-4" component="p">
         This page is empty since I haven&apos;t really made this site yet. You
         can check out my <Link href="https://github.com/mlaursen">GitHub</Link>{" "}
         for some more information about projects I work on.
