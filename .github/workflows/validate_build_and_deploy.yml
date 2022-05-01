@@ -31,3 +31,24 @@ jobs:
         with:
           branch: gh-pages
           folder: out
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          build: yarn build
+          start: yarn start
+          browser: chrome
+          record: true
+          config: baseUrl=https://mlaursen.com
+
+      - uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+
+      - uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: cypress-videos
+          path: cypress/videos

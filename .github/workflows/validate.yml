@@ -11,6 +11,9 @@ jobs:
   validate:
     name: Validate Using Node 16
     runs-on: ubuntu-latest
+    container:
+      image: cypress/browsers:node16.14.0-chrome99-ff97
+      options: --user 1001
     steps:
       - uses: actions/checkout@v3
 
@@ -23,4 +26,22 @@ jobs:
       - run: yarn
       - run: yarn lint
       - run: yarn typecheck
-      - run: yarn build
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          build: yarn build
+          start: yarn start
+          browser: chrome
+
+      - uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+
+      - uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: cypress-videos
+          path: cypress/videos
