@@ -11,6 +11,9 @@ jobs:
   build:
     name: Validate and Build
     runs-on: ubuntu-latest
+    container:
+      image: cypress/browsers:node16.14.0-chrome99-ff97
+      options: --user 1001
     steps:
       - uses: actions/checkout@v3
         with:
