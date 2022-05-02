@@ -33,7 +33,7 @@ jobs:
           folder: out
 
   test-chrome:
-    name: Test Deployment
+    name: Test Chrome
     runs-on: ubuntu-latest
     container:
       image: cypress/browsers:node16.14.0-chrome99-ff97
@@ -42,7 +42,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Cypress run
+      - name: "Cypress Tests - Chrome"
         uses: cypress-io/github-action@v2
         with:
           browser: chrome
@@ -67,6 +67,7 @@ jobs:
           path: cypress/videos
 
   test-firefox:
+    name: Test Firefox
     runs-on: ubuntu-latest
     container:
       image: cypress/browsers:node16.14.0-chrome99-ff97
