@@ -15,7 +15,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "build-static": "next build && next export"
+    "build-static": "next build && next export",
+    "start-static": "npx serve -p 3000 ./out"
   },
   "repository": "git@github.com:mlaursen/mlaursen.com.git",
   "author": "Mikkel Laursen <mlaursen03@gmail.com>",

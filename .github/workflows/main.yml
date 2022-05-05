@@ -1,0 +1,234 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Main Workflow
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validate Using Node 16
+    runs-on: ubuntu-latest
+    container:
+      image: cypress/browsers:node16.14.0-chrome99-ff97
+      options: --user 1001
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run Lint and Typecheck
+        uses: cypress-io/github-action@v2
+        with:
+          runTests: false
+
+      - run: yarn
+      - run: yarn lint
+      - run: yarn typecheck
+
+  deploy:
+    name: Deploy to mlaursen.com
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    container:
+      image: cypress/browsers:node16.14.0-chrome99-ff97
+      options: --user 1001
+    needs: validate
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build static website
+        uses: cypress-io/github-action@v2
+        with:
+          runTests: false
+
+      - run: yarn build-static
+      - run: touch out/.nojekyll
+      - run: cp CNAME out/CNAME
+
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: out
+
+  build-static:
+    name: Build static website
+    if: ${{ github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    container:
+      image: cypress/browsers:node16.14.0-chrome99-ff97
+      options: --user 1001
+    needs: validate
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build static website
+        uses: cypress-io/github-action@v2
+        with:
+          runTests: false
+
+      - run: yarn build-static
+
+      - name: Save build folder
+        uses: actions/upload-artifact@v3
+        with:
+          name: out
+          if-no-files-found: error
+          path: out
+
+  test-chrome-prod:
+    name: Test Chrome (Prod)
+    runs-on: ubuntu-latest
+    container:
+      image: cypress/browsers:node16.14.0-chrome99-ff97
+      options: --user 1001
+    needs: deploy
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: "Cypress Tests - Chrome"
+        uses: cypress-io/github-action@v2
+        with:
+          browser: chrome
+          record: true
+          config: baseUrl=https://mlaursen.com
+          spec: cypress/integration/*
+          group: "UI - Chrome"
+        env:
+          CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: chrome-cypress-screenshots
+          path: cypress/screenshots
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: chrome-cypress-videos
+          path: cypress/videos
+
+  test-firefox-prod:
+    name: Test Firefox (Prod)
+    runs-on: ubuntu-latest
+    container:
+      image: cypress/browsers:node16.14.0-chrome99-ff97
+      options: --user 1001
+    needs: deploy
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: "Cypress Tests - Firefox"
+        uses: cypress-io/github-action@v2
+        with:
+          browser: firefox
+          record: true
+          config: baseUrl=https://mlaursen.com
+          spec: cypress/integration/*
+          group: "UI - Firefox"
+        env:
+          CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: firefox-cypress-screenshots
+          path: cypress/screenshots
+
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: firefox-cypress-videos
+          path: cypress/videos
+
+  test-chrome-local:
+    name: Test Chrome (Local)
+    runs-on: ubuntu-latest
+    container:
+      image: cypress/browsers:node16.14.0-chrome99-ff97
+      options: --user 1001
+    needs: build-static
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Download the build folders
+        uses: actions/download-artifact@v3
+        with:
+          name: out
+          path: out
+
+      - name: "Cypress Tests - Chrome"
+        uses: cypress-io/github-action@v2
+        with:
+          start: yarn start-static
+          wait-on: "http://localhost:3000"
+          browser: chrome
+          record: true
+          spec: cypress/integration/*
+          group: "UI - Chrome"
+        env:
+          CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: chrome-cypress-screenshots
+          path: cypress/screenshots
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: chrome-cypress-videos
+          path: cypress/videos
+
+  test-firefox-local:
+    name: Test Firefox (Local)
+    runs-on: ubuntu-latest
+    container:
+      image: cypress/browsers:node16.14.0-chrome99-ff97
+      options: --user 1001
+    needs: build-static
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Download the build folders
+        uses: actions/download-artifact@v3
+        with:
+          name: out
+          path: out
+
+      - name: "Cypress Tests - Firefox"
+        uses: cypress-io/github-action@v2
+        with:
+          start: yarn start-static
+          wait-on: "http://localhost:3000"
+          browser: firefox
+          record: true
+          spec: cypress/integration/*
+          group: "UI - Firefox"
+        env:
+          CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: firefox-cypress-screenshots
+          path: cypress/screenshots
+
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: firefox-cypress-videos
+          path: cypress/videos
