@@ -21,3 +21,7 @@ node_modules/
 # Next.js build output
 /.next/
 /out/
+
+# Cypress output
+cypress/screenshots
+cypress/videos
