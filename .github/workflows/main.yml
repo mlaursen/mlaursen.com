@@ -32,13 +32,14 @@ jobs:
     name: Deploy to mlaursen.com
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
-    container:
-      image: cypress/browsers:node16.14.0-chrome99-ff97
-      options: --user 1001
     needs: validate
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        # this is required so that the github-pages-deploy-action works
+        # for some reason
+        with:
+          persist-credentials: false
 
       - name: Build static website
         uses: cypress-io/github-action@v2
@@ -179,6 +180,8 @@ jobs:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMIT_INFO_MESSAGE: ${{ github.event.pull_request.title }}
+          COMMIT_INFO_SHA: ${{ github.event.pull_request.head.sha }}
 
       - uses: actions/upload-artifact@v3
         if: failure()
@@ -220,6 +223,8 @@ jobs:
           CYPRESS_PROJECT_ID: ${{ secrets.CYPRESS_PROJECT_ID }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMIT_INFO_MESSAGE: ${{ github.event.pull_request.title }}
+          COMMIT_INFO_SHA: ${{ github.event.pull_request.head.sha }}
 
       - uses: actions/upload-artifact@v3
         if: failure()
