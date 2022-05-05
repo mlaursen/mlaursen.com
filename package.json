@@ -5,15 +5,17 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "predeploy": "rm -rf out && next build && next export && touch out/.nojekyll && cp CNAME out/CNAME",
-    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "prepare": "husky install",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,scss,md,yml,json}\"",
     "typecheck": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "predeploy": "rm -rf out && yarn build-static && touch out/.nojekyll && cp CNAME out/CNAME",
     "deploy": "gh-pages -d out -t",
-    "dev": "next dev",
     "test-cy": "cypress open",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prepare": "husky install"
+    "build-static": "next build && next export"
   },
   "repository": "git@github.com:mlaursen/mlaursen.com.git",
   "author": "Mikkel Laursen <mlaursen03@gmail.com>",
