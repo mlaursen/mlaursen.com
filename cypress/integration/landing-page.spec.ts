@@ -20,10 +20,11 @@ const presets: readonly Cypress.ViewportPreset[] = [
 ];
 
 describe("landing page", () => {
-  presets.forEach((preset) => {
-    it(`should display correctly for ${preset}`, () => {
+  it("should display correctly for all the cypress presets", () => {
+    cy.visit("/");
+    presets.forEach((preset) => {
+      cy.log(`Using preset: "${preset}"`);
       cy.viewport(preset);
-      cy.visit("/");
 
       cy.findByRole("heading", { name: "Hello," }).should("be.visible");
       cy.findByText(
