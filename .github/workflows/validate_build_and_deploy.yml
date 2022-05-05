@@ -58,12 +58,12 @@ jobs:
       - uses: actions/upload-artifact@v3
         if: failure()
         with:
-          name: cypress-screenshots
+          name: chrome-cypress-screenshots
           path: cypress/screenshots
       - uses: actions/upload-artifact@v3
         if: always()
         with:
-          name: cypress-videos
+          name: chrome-cypress-videos
           path: cypress/videos
 
   test-firefox:
@@ -92,11 +92,11 @@ jobs:
       - uses: actions/upload-artifact@v3
         if: failure()
         with:
-          name: cypress-screenshots
+          name: firefox-cypress-screenshots
           path: cypress/screenshots
 
       - uses: actions/upload-artifact@v3
         if: always()
         with:
-          name: cypress-videos
+          name: firefox-cypress-videos
           path: cypress/videos
