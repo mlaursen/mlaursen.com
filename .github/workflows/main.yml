@@ -54,6 +54,12 @@ jobs:
         with:
           runTests: false
 
+      - name: Download the build folders
+        uses: actions/download-artifact@v3
+        with:
+          name: public
+          path: public
+
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
@@ -129,6 +135,7 @@ jobs:
 
   test-chrome-local:
     name: Test Chrome (Local)
+    if: ${{ github.event_name == 'pull_request' }}
     runs-on: ubuntu-latest
     container:
       image: cypress/browsers:node16.14.0-chrome99-ff97
@@ -171,6 +178,7 @@ jobs:
 
   test-firefox-local:
     name: Test Firefox (Local)
+    if: ${{ github.event_name == 'pull_request' }}
     runs-on: ubuntu-latest
     container:
       image: cypress/browsers:node16.14.0-chrome99-ff97
