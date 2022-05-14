@@ -12,12 +12,6 @@
 </main>
 
 <style>
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-
   :root {
     --bg: #fafafa;
     --color: #212121;
@@ -35,6 +29,10 @@
       --bg: #121212;
       --color: #fff;
     }
+  }
+
+  :global(*) {
+    box-sizing: border-box;
   }
 
   :global(html) {

@@ -1,10 +1,22 @@
-overrides:
-  - files: "*.js"
-    options:
-      singleQuote: true
-  - files: "*.scss"
-    options:
-      singleQuote: true
-  - files: "*.md"
-    options:
-      proseWrap: always
+{
+  "overrides": [
+    {
+      "files": "*.js",
+      "options": {
+        "singleQuote": true
+      }
+    },
+    {
+      "files": "*.scss",
+      "options": {
+        "singleQuote": true
+      }
+    },
+    {
+      "files": "*.md",
+      "options": {
+        "proseWrap": "always"
+      }
+    }
+  ]
+}

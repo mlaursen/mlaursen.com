@@ -27,14 +27,15 @@ jobs:
 
       - run: yarn
       - run: yarn check
+      - run: yarn lint
       - run: yarn build
 
       - name: Save build folder
         uses: actions/upload-artifact@v3
         with:
-          name: public
+          name: build
           if-no-files-found: error
-          path: public
+          path: build
 
   deploy:
     name: Deploy to mlaursen.com
@@ -57,14 +58,14 @@ jobs:
       - name: Download the build folders
         uses: actions/download-artifact@v3
         with:
-          name: public
-          path: public
+          name: build
+          path: build
 
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: gh-pages
-          folder: public
+          folder: build
 
   test-chrome-prod:
     name: Test Chrome (Prod)
@@ -147,14 +148,14 @@ jobs:
       - name: Download the build folders
         uses: actions/download-artifact@v3
         with:
-          name: public
-          path: public
+          name: build
+          path: build
 
       - name: "Cypress Tests - Chrome"
         uses: cypress-io/github-action@v2
         with:
-          start: yarn start
-          wait-on: "http://localhost:8080"
+          start: yarn preview
+          wait-on: "http://localhost:3000"
           browser: chrome
           record: true
           spec: cypress/integration/*
@@ -190,14 +191,14 @@ jobs:
       - name: Download the build folders
         uses: actions/download-artifact@v3
         with:
-          name: public
-          path: public
+          name: build
+          path: build
 
       - name: "Cypress Tests - Firefox"
         uses: cypress-io/github-action@v2
         with:
-          start: yarn start
-          wait-on: "http://localhost:8080"
+          start: yarn preview
+          wait-on: "http://localhost:3000"
           browser: firefox
           record: true
           spec: cypress/integration/*

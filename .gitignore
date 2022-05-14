@@ -13,14 +13,17 @@ node_modules/
 *.tsbuildinfo
 
 # dotenv environment variables file
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env
+.env.*
+!.env.example
 
 # svelte build output
-/public/build
+/build
+/.svelte-kit
+/package
 
 # Cypress output
 cypress/screenshots
 cypress/videos
+
+.DS_Store
