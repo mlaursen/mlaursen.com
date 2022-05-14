@@ -10,29 +10,37 @@ on:
     branches: [main]
 
 jobs:
-  validate:
-    name: Validate Using Node 16
+  build:
+    name: Build website
     runs-on: ubuntu-latest
     container:
       image: cypress/browsers:node16.14.0-chrome99-ff97
       options: --user 1001
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - name: Run Lint and Typecheck
+      - name: Build static website
         uses: cypress-io/github-action@v2
         with:
           runTests: false
 
       - run: yarn
-      - run: yarn lint
-      - run: yarn typecheck
+      - run: yarn check
+      - run: yarn build
+
+      - name: Save build folder
+        uses: actions/upload-artifact@v3
+        with:
+          name: public
+          if-no-files-found: error
+          path: public
 
   deploy:
     name: Deploy to mlaursen.com
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
-    needs: validate
+    needs: build
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -46,41 +54,11 @@ jobs:
         with:
           runTests: false
 
-      - run: yarn build-static
-      - run: touch out/.nojekyll
-      - run: cp CNAME out/CNAME
-
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: gh-pages
-          folder: out
-
-  build-static:
-    name: Build static website
-    if: ${{ github.event_name == 'pull_request' }}
-    runs-on: ubuntu-latest
-    container:
-      image: cypress/browsers:node16.14.0-chrome99-ff97
-      options: --user 1001
-    needs: validate
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Build static website
-        uses: cypress-io/github-action@v2
-        with:
-          runTests: false
-
-      - run: yarn build-static
-
-      - name: Save build folder
-        uses: actions/upload-artifact@v3
-        with:
-          name: out
-          if-no-files-found: error
-          path: out
+          folder: public
 
   test-chrome-prod:
     name: Test Chrome (Prod)
@@ -155,21 +133,21 @@ jobs:
     container:
       image: cypress/browsers:node16.14.0-chrome99-ff97
       options: --user 1001
-    needs: build-static
+    needs: build
     steps:
       - uses: actions/checkout@v3
 
       - name: Download the build folders
         uses: actions/download-artifact@v3
         with:
-          name: out
-          path: out
+          name: public
+          path: public
 
       - name: "Cypress Tests - Chrome"
         uses: cypress-io/github-action@v2
         with:
-          start: yarn start-static
-          wait-on: "http://localhost:3000"
+          start: yarn start
+          wait-on: "http://localhost:8080"
           browser: chrome
           record: true
           spec: cypress/integration/*
@@ -197,21 +175,21 @@ jobs:
     container:
       image: cypress/browsers:node16.14.0-chrome99-ff97
       options: --user 1001
-    needs: build-static
+    needs: build
     steps:
       - uses: actions/checkout@v3
 
       - name: Download the build folders
         uses: actions/download-artifact@v3
         with:
-          name: out
-          path: out
+          name: public
+          path: public
 
       - name: "Cypress Tests - Firefox"
         uses: cypress-io/github-action@v2
         with:
-          start: yarn start-static
-          wait-on: "http://localhost:3000"
+          start: yarn start
+          wait-on: "http://localhost:8080"
           browser: firefox
           record: true
           spec: cypress/integration/*
