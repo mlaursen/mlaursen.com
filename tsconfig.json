@@ -1,17 +1,5 @@
 {
-  "extends": "./tsconfig.base.json",
-  "compilerOptions": {
-    "allowJs": true,
-    "jsx": "preserve",
-    "noEmit": true,
-    "composite": false,
-    "skipLibCheck": true,
-    "target": "esnext",
-    "rootDir": "src",
-    "baseUrl": "src",
-    "isolatedModules": true,
-    "incremental": true
-  },
-  "include": ["src", "next-env.d.ts"],
-  "exclude": ["src/server", "**/__tests__"]
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
 }
