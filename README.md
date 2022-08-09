@@ -1,6 +1,7 @@
 # mlaursen.com
 
-My (empty) portfolio website developed using [next] and [react-md].
+My (empty) portfolio website developed using [next] and [react-md]. There's even
+some "fun" [Cypress] tests for no reason.
 
 ## Commands
 
@@ -16,8 +17,6 @@ My (empty) portfolio website developed using [next] and [react-md].
 - `build-static` - build the app as pre-compiled html pages (requires no
   `getServerSideProps` and `getInitialProps`)
 - `start` - run the production build
-
-### Cypress Testing
 
 ## Github Actions
 
