@@ -27,7 +27,7 @@
   "devDependencies": {
     "@mlaursen/eslint-config": "^1.8.0",
     "@testing-library/cypress": "^8.0.3",
-    "@types/node": "^18.7.18",
+    "@types/node": "^18.11.18",
     "@types/react": "^18.0.20",
     "@types/react-dom": "^18.0.6",
     "cypress": "^10.8.0",
