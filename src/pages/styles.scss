@@ -1,5 +1,5 @@
-@use 'react-md' as * with (
-  $rmd-theme-dark-elevation: 'prefers-color-scheme'
+@use "react-md" as * with (
+  $rmd-theme-dark-elevation: "prefers-color-scheme"
 );
 
 @include rmd-utils-base;
