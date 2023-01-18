@@ -11,22 +11,26 @@ on:
 
 jobs:
   validate:
-    name: Validate Using Node 16
+    name: Validate Using Latest Node LTS
     runs-on: ubuntu-latest
-    container:
-      image: cypress/browsers:node16.14.0-chrome99-ff97
-      options: --user 1001
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
 
       - name: Run Lint and Typecheck
         uses: cypress-io/github-action@v4
         with:
           runTests: false
 
-      - run: yarn
-      - run: yarn lint
-      - run: yarn typecheck
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm typecheck
 
   deploy:
     name: Deploy to mlaursen.com
@@ -40,13 +44,20 @@ jobs:
         # for some reason
         with:
           persist-credentials: false
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
 
       - name: Build static website
         uses: cypress-io/github-action@v4
         with:
           runTests: false
 
-      - run: yarn build-static
+      - run: pnpm build-static
       - run: touch out/.nojekyll
       - run: cp CNAME out/CNAME
 
@@ -61,19 +72,25 @@ jobs:
     if: ${{ github.event_name == 'pull_request' }}
     runs-on: ubuntu-latest
     container:
-      image: cypress/browsers:node16.14.0-chrome99-ff97
+      image: cypress/browsers:node18.6.0-chrome105-ff104
       options: --user 1001
     needs: validate
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
 
       - name: Build static website
         uses: cypress-io/github-action@v4
         with:
           runTests: false
 
-      - run: yarn build-static
+      - run: pnpm build-static
 
       - name: Save build folder
         uses: actions/upload-artifact@v3
@@ -86,11 +103,18 @@ jobs:
     name: Test Chrome (Prod)
     runs-on: ubuntu-latest
     container:
-      image: cypress/browsers:node16.14.0-chrome99-ff97
+      image: cypress/browsers:node18.6.0-chrome105-ff104
       options: --user 1001
     needs: deploy
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
 
       - name: "Cypress Tests - Chrome"
         uses: cypress-io/github-action@v4
@@ -119,11 +143,18 @@ jobs:
     name: Test Firefox (Prod)
     runs-on: ubuntu-latest
     container:
-      image: cypress/browsers:node16.14.0-chrome99-ff97
+      image: cypress/browsers:node18.6.0-chrome105-ff104
       options: --user 1001
     needs: deploy
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
 
       - name: "Cypress Tests - Firefox"
         uses: cypress-io/github-action@v4
@@ -153,11 +184,18 @@ jobs:
     name: Test Chrome (Local)
     runs-on: ubuntu-latest
     container:
-      image: cypress/browsers:node16.14.0-chrome99-ff97
+      image: cypress/browsers:node18.6.0-chrome105-ff104
       options: --user 1001
     needs: build-static
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
 
       - name: Download the build folders
         uses: actions/download-artifact@v3
@@ -168,7 +206,7 @@ jobs:
       - name: "Cypress Tests - Chrome"
         uses: cypress-io/github-action@v4
         with:
-          start: yarn start-static
+          start: pnpm start-static
           wait-on: "http://localhost:3000"
           browser: chrome
           record: true
@@ -195,11 +233,18 @@ jobs:
     name: Test Firefox (Local)
     runs-on: ubuntu-latest
     container:
-      image: cypress/browsers:node16.14.0-chrome99-ff97
+      image: cypress/browsers:node18.6.0-chrome105-ff104
       options: --user 1001
     needs: build-static
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
 
       - name: Download the build folders
         uses: actions/download-artifact@v3
@@ -210,7 +255,7 @@ jobs:
       - name: "Cypress Tests - Firefox"
         uses: cypress-io/github-action@v4
         with:
-          start: yarn start-static
+          start: pnpm start-static
           wait-on: "http://localhost:3000"
           browser: firefox
           record: true

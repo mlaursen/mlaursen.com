@@ -1,6 +1,5 @@
 import type { ReactElement } from "react";
-import { Link } from "@react-md/link";
-import { TextContainer, Typography } from "@react-md/typography";
+import { Link, TextContainer, Typography } from "react-md";
 
 import styles from "./index.module.scss";
 
