@@ -31,7 +31,7 @@
     "react-md": "^5.1.4"
   },
   "devDependencies": {
-    "@mlaursen/eslint-config": "^2.0.1",
+    "@mlaursen/eslint-config": "^2.2.0",
     "@testing-library/cypress": "^9.0.0",
     "@types/node": "^18.7.18",
     "@types/react": "^18.0.20",

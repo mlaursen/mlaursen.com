@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@mlaursen/eslint-config': ^2.0.1
+  '@mlaursen/eslint-config': ^2.2.0
   '@testing-library/cypress': ^9.0.0
   '@types/node': ^18.7.18
   '@types/react': ^18.0.20
@@ -26,7 +26,7 @@ dependencies:
   react-md: 5.1.4_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
-  '@mlaursen/eslint-config': 2.0.1_7uibuqfxkfaozanbtbziikiqje
+  '@mlaursen/eslint-config': 2.2.0_7uibuqfxkfaozanbtbziikiqje
   '@testing-library/cypress': 9.0.0_cypress@12.3.0
   '@types/node': 18.11.18
   '@types/react': 18.0.26
@@ -164,8 +164,8 @@ packages:
     resolution: {integrity: sha512-9b8mPpKrfeGRuhFH5iO1iwCLeIIsV6+H1sRfxbkoGXIyQE2BTsPd9zqSqQJ+pv5sJ/hT5M1zvOFL02MnEezFug==}
     dev: true
 
-  /@mlaursen/eslint-config/2.0.1_7uibuqfxkfaozanbtbziikiqje:
-    resolution: {integrity: sha512-DEvAKdt9Rc3mNhKuXIpS/cIdrrZlUZDayrLfnYAa0p1frf7p1hy04g5uYEymZIlZ2RpYy9rYufXW2Z3MJskfJg==}
+  /@mlaursen/eslint-config/2.2.0_7uibuqfxkfaozanbtbziikiqje:
+    resolution: {integrity: sha512-Lkh+tu8mUZXQ87Dwa3UfCBEU2EjKyQ+dxl5fBZiGHNhVJrwcbljlUisDq0gX6erAwzpkqlv4SIRQgfCnSFCs4g==}
     engines: {node: '>=16', pnpm: '>=7'}
     peerDependencies:
       eslint: '>= 8.0.0'
