@@ -23,11 +23,11 @@ some "fun" [Cypress] tests for no reason.
 - [main](./.github/workflows/main.yml) - The main workflow that handles
   continuous integration and deployment.
   - Pull Requests
-    - Prevent errors by running `pnpm lint` and `yarn typecheck`
+    - Prevent errors by running `pnpm lint` and `pnpm typecheck`
     - Run [Cypress] end-to-end tests against a local build with Chrome and
       Firefox
   - New commits/merges into `main`
-    - Prevent errors by running `pnpm lint` and `yarn typecheck`
+    - Prevent errors by running `pnpm lint` and `pnpm typecheck`
     - Build and deploy the website to https://mlaursen.com
     - Run [Cypress] end-to-end tests against the newly deployed code with Chrome
       and Firefox
