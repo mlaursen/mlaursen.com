@@ -14,9 +14,8 @@ some "fun" [Cypress] tests for no reason.
 - `test-cy` - Open the [Cypress] testing dashboard
 - `dev` - start the development server with [next]
 - `build` - build the app for production
-- `build-static` - build the app as pre-compiled html pages (requires no
-  `getServerSideProps` and `getInitialProps`)
 - `start` - run the production build
+- `start-static` - run the production build using [serve]
 
 ## Github Actions
 
@@ -24,6 +23,7 @@ some "fun" [Cypress] tests for no reason.
   continuous integration and deployment.
   - Pull Requests
     - Prevent errors by running `pnpm lint` and `pnpm typecheck`
+    - Build the website
     - Run [Cypress] end-to-end tests against a local build with Chrome and
       Firefox
   - New commits/merges into `main`
@@ -31,8 +31,6 @@ some "fun" [Cypress] tests for no reason.
     - Build and deploy the website to https://mlaursen.com
     - Run [Cypress] end-to-end tests against the newly deployed code with Chrome
       and Firefox
-- [dependabot.yml](./.github/dependabot.yml) - Keep dependencies up-to-date on a
-  weekly schedule
 - [codeql_analysis.yml](./.github/workflows/codeql_analysis.yml) - check for
   security issues in code
 
@@ -41,4 +39,5 @@ some "fun" [Cypress] tests for no reason.
 [next]: https://nextjs.org/
 [cypress]: https://cypress.io
 [prettier]: https://prettier.io
+[serve]: https://www.npmjs.com/package/serve
 [@mlaursen/eslint-config]: https://github.com/mlaursen/eslint-config
