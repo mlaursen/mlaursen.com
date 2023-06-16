@@ -32,44 +32,8 @@ jobs:
       - run: pnpm lint
       - run: pnpm typecheck
 
-  deploy:
-    name: Deploy to mlaursen.com
-    if: ${{ github.ref == 'refs/heads/main' }}
-    runs-on: ubuntu-latest
-    needs: validate
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        # this is required so that the github-pages-deploy-action works
-        # for some reason
-        with:
-          persist-credentials: false
-      - uses: pnpm/action-setup@v2.2.4
-        with:
-          version: 8
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: pnpm
-
-      - name: Build static website
-        uses: cypress-io/github-action@v5
-        with:
-          runTests: false
-
-      - run: pnpm build-static
-      - run: touch out/.nojekyll
-      - run: cp CNAME out/CNAME
-
-      - name: Deploy to gh-pages
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
-        with:
-          branch: gh-pages
-          folder: out
-
-  build-static:
-    name: Build static website
-    if: ${{ github.event_name == 'pull_request' }}
+  build:
+    name: Build website
     runs-on: ubuntu-latest
     container:
       image: cypress/browsers:node18.6.0-chrome105-ff104
@@ -85,12 +49,12 @@ jobs:
           node-version: 18
           cache: pnpm
 
-      - name: Build static website
+      - name: Build website
         uses: cypress-io/github-action@v5
         with:
           runTests: false
 
-      - run: pnpm build-static
+      - run: pnpm build
 
       - name: Save build folder
         uses: actions/upload-artifact@v3
@@ -98,6 +62,24 @@ jobs:
           name: out
           if-no-files-found: error
           path: out
+
+  deploy:
+    name: Deploy to mlaursen.com
+    if: ${{ github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Download build folder
+        uses: actions/download-artifact@v3
+        with:
+          name: out
+          path: out
+
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        with:
+          branch: gh-pages
+          folder: out
 
   test-chrome-prod:
     name: Test Chrome (Prod)
@@ -182,11 +164,12 @@ jobs:
 
   test-chrome-local:
     name: Test Chrome (Local)
+    if: ${{ github.ref != 'refs/heads/main' }}
     runs-on: ubuntu-latest
     container:
       image: cypress/browsers:node18.6.0-chrome105-ff104
       options: --user 1001
-    needs: build-static
+    needs: build
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2.2.4
@@ -231,11 +214,12 @@ jobs:
 
   test-firefox-local:
     name: Test Firefox (Local)
+    if: ${{ github.ref != 'refs/heads/main' }}
     runs-on: ubuntu-latest
     container:
       image: cypress/browsers:node18.6.0-chrome105-ff104
       options: --user 1001
-    needs: build-static
+    needs: build
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v2.2.4
