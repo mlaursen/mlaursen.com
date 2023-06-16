@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   reactStrictMode: true,
   eslint: {
     // I have already run lint before this step...
@@ -8,9 +9,6 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  exportPathMap: () => ({
-    "/": { page: "/" },
-  }),
 };
 
 export default nextConfig;

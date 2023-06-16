@@ -18,8 +18,13 @@
     "skipLibCheck": true,
     "noEmit": true,
     "isolatedModules": true,
-    "incremental": true
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "styles.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules", "cypress/**", "cypress.config.ts"]
 }

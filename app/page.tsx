@@ -1,9 +1,10 @@
+"use client";
 import type { ReactElement } from "react";
 import { Link, TextContainer, Typography } from "react-md";
 
-import styles from "./index.module.scss";
+import styles from "./page.module.scss";
 
-export default function Home(): ReactElement {
+export default function Page(): ReactElement {
   return (
     <TextContainer className={styles.container}>
       <Typography type="headline-2" margin="none">
