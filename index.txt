@@ -1,0 +1,12 @@
+1:HL["/_next/static/media/7d8c9b0ca4a64a5a-s.p.woff2",{"as":"font","type":"font/woff2"}]
+2:HL["/_next/static/media/934c4b7cb736f2a3-s.p.woff2",{"as":"font","type":"font/woff2"}]
+3:HL["/_next/static/css/5547beb44c5b793d.css",{"as":"style"}]
+0:["JVS4mcHK5fBrDpqNff_N2",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"$L4",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/5547beb44c5b793d.css","precedence":"next"}]],["$L5",["$","meta",null,{"name":"next-size-adjust"}]]]]]]
+6:HL["/_next/static/css/d224e7827a2749a9.css",{"as":"style"}]
+7:I{"id":"1662","chunks":["185:static/chunks/app/layout-8564860274173faa.js"],"name":"","async":false}
+8:I{"id":"8010","chunks":["272:static/chunks/webpack-b864c5517181ed94.js","914:static/chunks/532a7769-c73b6f59b81b67ca.js","745:static/chunks/745-a5de6dab3354b3f5.js"],"name":"","async":false}
+9:I{"id":"5484","chunks":["272:static/chunks/webpack-b864c5517181ed94.js","914:static/chunks/532a7769-c73b6f59b81b67ca.js","745:static/chunks/745-a5de6dab3354b3f5.js"],"name":"","async":false}
+a:I{"id":"2076","chunks":["272:static/chunks/webpack-b864c5517181ed94.js","914:static/chunks/532a7769-c73b6f59b81b67ca.js","745:static/chunks/745-a5de6dab3354b3f5.js"],"name":"","async":false}
+b:I{"id":"1280","chunks":["931:static/chunks/app/page-9e32115530f24928.js"],"name":"","async":false}
+4:[["$","$L7",null,{"children":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[["$","$La",null,{"propsForComponent":{"params":{}},"Component":"$b"}],null],"segment":"__PAGE__"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d224e7827a2749a9.css","precedence":"next"}]]}],"params":{}}],null]
+5:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
