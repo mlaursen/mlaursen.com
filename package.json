@@ -24,25 +24,25 @@
   "repository": "git@github.com:mlaursen/mlaursen.com.git",
   "author": "Mikkel Laursen <mlaursen03@gmail.com>",
   "dependencies": {
-    "next": "^13.4.6",
+    "next": "^13.4.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-md": "^5.1.5"
   },
   "devDependencies": {
-    "@mlaursen/eslint-config": "^2.3.0",
+    "@mlaursen/eslint-config": "^2.4.0",
     "@testing-library/cypress": "^9.0.0",
-    "@types/node": "^20.3.1",
-    "@types/react": "^18.2.12",
-    "@types/react-dom": "^18.2.5",
-    "cypress": "^12.14.0",
-    "eslint": "^8.42.0",
-    "eslint-config-next": "^13.4.6",
+    "@types/node": "^20.4.2",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "cypress": "^12.17.1",
+    "eslint": "^8.44.0",
+    "eslint-config-next": "^13.4.9",
     "husky": "^8.0.1",
-    "lint-staged": "^13.2.2",
+    "lint-staged": "^13.2.3",
     "prettier": "^2.8.8",
-    "sass": "^1.63.4",
-    "typescript": "^5.1.3"
+    "sass": "^1.63.6",
+    "typescript": "^5.1.6"
   },
   "lint-staged": {
     "**/*.{ts,tsx,scss,js,jsx,md,yml,json}": [
