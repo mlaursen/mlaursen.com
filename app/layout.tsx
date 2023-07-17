@@ -20,6 +20,14 @@ export const metadata: Metadata = {
     title: "Mikkel Laursen",
     description: "A placeholder portfolio website for Mikkel Laursen",
     url: "/",
+    images: [
+      {
+        url: "/og.png",
+        type: "image/png",
+        height: 630,
+        width: 1200,
+      },
+    ],
   },
   metadataBase: new URL("https://mlaursen.com"),
   icons: [
@@ -39,6 +47,10 @@ export const metadata: Metadata = {
       url: "/favicon-16x16.png",
       type: "image/png",
       sizes: "16x16",
+    },
+    {
+      rel: "icon",
+      url: "/favicon.ico",
     },
   ],
 };
