@@ -1,14 +1,47 @@
-"use client";
 import "./app.scss";
-import { Roboto } from "next/font/google";
+
+import type { Metadata } from "next";
+import { Roboto_Flex } from "next/font/google";
 import type { ReactElement, ReactNode } from "react";
 
-const roboto = Roboto({
+const roboto = Roboto_Flex({
   subsets: ["latin"],
-  weight: ["300", "400"],
-  display: "swap",
   variable: "--roboto",
 });
+
+export const metadata: Metadata = {
+  title: "Mikkel Laursen",
+  colorScheme: "dark",
+  themeColor: "#000",
+  description: "A placeholder portfolio website for Mikkel Laursen",
+  manifest: "/site.webmanifest",
+  openGraph: {
+    type: "website",
+    title: "Mikkel Laursen",
+    description: "A placeholder portfolio website for Mikkel Laursen",
+    url: "/",
+  },
+  metadataBase: new URL("https://mlaursen.com"),
+  icons: [
+    {
+      rel: "apple-touch-icon",
+      url: "/apple-touch-icon.png",
+      sizes: "180x180",
+    },
+    {
+      rel: "icon",
+      url: "/favicon-32x32.png",
+      type: "image/png",
+      sizes: "32x32",
+    },
+    {
+      rel: "icon",
+      url: "/favicon-16x16.png",
+      type: "image/png",
+      sizes: "16x16",
+    },
+  ],
+};
 
 export interface LayoutProps {
   children: ReactNode;
@@ -17,39 +50,6 @@ export interface LayoutProps {
 export default function Layout({ children }: LayoutProps): ReactElement {
   return (
     <html lang="en" className={roboto.variable}>
-      <head>
-        <title>MIkkel Laursen</title>
-        <meta name="color-scheme" content="dark" />
-        <meta name="theme-color" content="#000" />
-        <meta name="og:title" content="Mikkel Laursen" />
-        <meta name="og:url" content="/" />
-        <meta
-          name="og:description"
-          content="A placeholder portfolio website for Mikkel Laursen"
-        />
-        <meta
-          name="description"
-          content="A placeholder portfolio website for Mikkel Laursen"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-      </head>
       <body>{children}</body>
     </html>
   );
