@@ -2,11 +2,9 @@
 import type { ReactElement } from "react";
 import { Link, TextContainer, Typography } from "react-md";
 
-import styles from "./page.module.scss";
-
 export default function Page(): ReactElement {
   return (
-    <TextContainer className={styles.container}>
+    <TextContainer>
       <Typography type="headline-2" margin="none">
         Hello,
       </Typography>
