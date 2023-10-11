@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@react-md/core':
+    specifier: ^1.0.0-next.0
+    version: 1.0.0-next.0(react-dom@18.2.0)(react@18.2.0)
   next:
     specifier: ^13.4.10
     version: 13.4.10(react-dom@18.2.0)(react@18.2.0)(sass@1.63.6)
@@ -14,9 +17,6 @@ dependencies:
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
-  react-md:
-    specifier: ^5.1.5
-    version: 5.1.5(react-dom@18.2.0)(react@18.2.0)
 
 devDependencies:
   '@mlaursen/eslint-config':
@@ -198,10 +198,6 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@juggle/resize-observer@3.4.0:
-    resolution: {integrity: sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==}
-    dev: false
-
   /@microsoft/tsdoc-config@0.16.2:
     resolution: {integrity: sha512-OGiIzzoBLgWWR0UdRJX98oYO+XKGf7tiK4Zk6tQ/E4IJqGCe7dvkTvgDZV5cFJUzLGDOjeAXrnZoA6QkVySuxw==}
     dependencies:
@@ -368,537 +364,37 @@ packages:
       tslib: 2.6.0
     dev: true
 
-  /@react-md/alert@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-0K2dB2m0RwMUy8G/9HKuHCTC8J3W74Aoeblzo83LSbBJmc5BlgOxgbybL3Sd9nkOgOURiia1GsBRu5wGWERTjw==}
+  /@react-md/core@1.0.0-next.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-zniJUhyBpbkcWo+6C/yrxxVjbsTS6IRfe8W5FzrwVvOcveMzuDMKj/aQoXQDuW6AnN/3wDvpZgHo3IhVsmMeqA==}
     peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
+      '@jest/globals': ^29.6.1
+      '@jest/types': ^29.6.1
+      '@testing-library/dom': ^9.3.1
+      '@testing-library/jest-dom': ^5.16.5
+      '@testing-library/react': ^14.0.0
+      '@testing-library/user-event': ^14.4.3
+      react: '>= 18'
+      react-dom: '>= 18'
+    peerDependenciesMeta:
+      '@jest/globals':
+        optional: true
+      '@jest/types':
+        optional: true
+      '@testing-library/dom':
+        optional: true
+      '@testing-library/jest-dom':
+        optional: true
+      '@testing-library/react':
+        optional: true
+      '@testing-library/user-event':
+        optional: true
+      react:
+        optional: true
+      react-dom:
+        optional: true
     dependencies:
-      '@react-md/button': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/elevation': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/portal': 5.1.0(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/typography': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/app-bar@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-j1De/pkjYB/BwVabGSikudRehjau8au+i6CT94lAZfw5qGQlvI0RzBi6IJIjPysIdaSHMh0IMDyxBT+rfpcsxg==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/button': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/elevation': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/icon': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/typography': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/autocomplete@5.1.5(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-mxPQ9UzZebcR+2u+crOuouJCtCrZNoNYQU9UON6hGE1XAaEAfpXr+/q3aa7qWdnpHVJvMjv1K8VGyw1AxEd77A==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/form': 5.1.4(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/list': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/portal': 5.1.0(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/states': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/typography': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/avatar@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-ElIZaUXHKs7Bu9Ezu5AWGcUJeDGqpP8iPFFzjLA2mmeWxGfySSDU/S1OvePDZcVqcb2Mfm+NKgxOPG+KEBW8tQ==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/icon': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/badge@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-MNThmzGULOP3klYmK3i6Pu4X67XiNxl8Od0wF3llvxMKr2DnkegJ4uGadb6q1akcvzZIZL9nFQL5R+lBurgpbg==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/button': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/icon': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/typography': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/button@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-aB5I0BGeN/2JwgCgV5M06wI/fmQZCZ78TnNZdQKw98tndUw99jHaOAHTqLD/K4m6vV5Tg38mTCASXyGDwGO6Zw==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/elevation': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/icon': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/states': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/typography': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/card@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-w9Hlpn3cvSZXRVsTuKX1zRrMEXhXm4TKl39v2MyH6yy074VXQE0qKawaOVBitefEykKrd4eh6KF3SowvZmTBHg==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/divider': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/elevation': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/icon': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/states': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/typography': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/chip@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-EE2AP2F3XS31N9pxNq9e42ZyqLn3VkbvtbbLBLFYWfDfhdSV2cw5QiIlsq/f4dSSpUGt2JamfSlgPComPX0BSg==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/elevation': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/icon': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/states': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/typography': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/dialog@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-P+mQdimCCKpmKmEqEN/0ChhQxHe+fg3gw0hPgSrf5jI6MiXaCQftArK7L7/lo3wDpo86x1EHwQBT+bXDE5/D9Q==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/app-bar': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/elevation': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/overlay': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/portal': 5.1.0(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/typography': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/divider@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-hhyR8UmX42ofcXGdv3B24Qp0bc01BEqXsGWOqxKJVwXThT6ehY9hM2KkUHCrW2+Kf8Hc6lSdpb0KsShO+OkcfQ==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/elevation@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-spArkcqASlReByg5F+Tp+e74ek9Vi1n6nU4TOr5U42sytVwncilEUchxl6zFcwg3MDwMjfk40AVPuwkJRlDoZg==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/expansion-panel@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-hQpPiveq/pZU+HP8rrYCtrKN9nAXKGQgIFXWMSji1W7CsF0J6SW9QaYYh1TFD2tC1GZkAzPPStwP4P6a4JijDw==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/button': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/card': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/icon': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/form@5.1.4(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-SVKBcXnIrI/uESPOHjsgz2GnObC14gUyw1RPMmItGwZ3DCqCniTL5v00puM+3QeiHReYDKeyPpw+E9kRoluNWA==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/button': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/icon': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/list': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/menu': 5.1.4(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/portal': 5.1.0(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/progress': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/states': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/tooltip': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/typography': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      nanoid: 3.3.6
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/icon@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-GCgNmj3bqKhG4FuEud83ffBbtyytLlFNQ2nRPWdzqzi5C3UzEn1p6tn5AwUQTqP6Anf51d6qPXl49+lEk8bkrA==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/typography': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/layout@5.1.4(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-iJE9Ui4AgQnx80Ls8fEM6xUCfunyDoQMrnnfORkQS3xQvy8vTlsAX3+UB43qnmAyt/pmrQFWyaX4KFWuctjLKg==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/app-bar': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/dialog': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/divider': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/form': 5.1.4(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/icon': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/link': 5.1.4(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/list': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/menu': 5.1.4(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/sheet': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/states': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/tooltip': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/tree': 5.1.4(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/typography': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/link@5.1.4(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-Xpw/GSV82zp80El0evbKAUnVa9yCSBSTjHTo1/VtA1hsu338De+WNctQr+4pnU5Nx8t6p+z82T6WVoAvTGa5rA==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/states': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/typography': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/list@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-ySK5ltRpmJ1LhgeADw0kwUAgNPeAoV3KQrKnqBkSqwr0YaEzYMMJdwLEpcf14DJ7kFR25tAW9RYvbWAIpFUZQQ==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/avatar': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/divider': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/icon': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/states': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/typography': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/material-icons@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-EqK6mInwgewB+MDsnDjRh1ylTDTjmrGP/vLwZqPGXm7KyjWIiawMxowvbAUCXKiacNgsFJEiudP5z49q4n4+Vw==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/icon': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/media@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-WxQcmpqZtATNeMfkYIvqmDHQiWNfcud1JCCDxStOLUnGPxHe9LoA6x6Bu6QUF6zX9EOFm6JRb55mFFVueVoG+g==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/menu@5.1.4(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-x+5qcHuxM2Hl31yoqi/3McUAjP1Fm1rRIhhG7Si0eqYIuZ0N4F+arYAIJchzWIwOCJtYJqu7R/5z5YNHqpS5ZA==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/app-bar': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/button': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/divider': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/elevation': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/icon': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/list': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/portal': 5.1.0(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/sheet': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/states': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/typography': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/overlay@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-1yMG5Y53FSnN6jzJ78p/Ux12XLmjDABoHKPGjHHk5n3/DxFjADK3nGGPZHQiY2d7P+GKqi6X36SU2Vdg+2RjEw==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/portal': 5.1.0(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/portal@5.1.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-f8kY7G2tAFKPXEVqkuBk5Kv1Pk4ICO+ZzC4jLJOISKGaVMs0jVTJfKyngj3/EnI4eYZzKqCO3OACI/3Khl5OyA==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/progress@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-0C7IGlOZrg4q+AfxF+/1j4ze1CHO43U6JWkHP3LHmWDXcbZAcWC1kg+Eh7IVXUM0RdJX7EsrFMHstk/84VKp9w==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/sheet@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-sd7JQU0Cfuq6U4iRJoza9QG6NMh1Hx1CFOgqVSu7h0Y76N3D3Zg4WSqNPeR/7aexrIOyNMuKYLY6kBXnXPyLKg==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/dialog': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/elevation': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/overlay': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/states@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-RsKZ8Vb+QorIckuKoLOs5Paykt6TrHBcFSjgh4JXR0KbqJKMIQwUDvmAvmtYLNt8akFNLtrAV77ceODqW/Gr7Q==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/table@5.1.4(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-lBQZOkCR9T+qSHNHOlLkkfzwgiZLlVcFzDP5o6iQdTbZPnOJsC0OwjQGZIkayEX2s7lfdhLQkFQu4DrOCcYQaA==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/button': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/divider': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/form': 5.1.4(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/icon': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/typography': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/tabs@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-/lJdJo7y6gqmY1YSHKlv73V25O4ijKphYawuFkBY25yZV0LSTL/BtQN54dFGC41KsY8skXe2v8yw2BaB/z+dMg==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/icon': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/states': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/typography': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/theme@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-Hsj9+UfrhIcPS88s+WCVvFRWZ1f+p/lAT18W4D/o+LiKBYZKb/lKZgC8d8oBdzUyXoFW9T49TS5ZrYtba8nz/Q==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/tooltip@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-EWF44H1a0640qApKEZ4snGm3onPM9JGbUH9PlEiERB7lDPpAcfiCK/DREUO2iL2YhaHgn21+D4PjPnYhiyG9gA==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/portal': 5.1.0(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/typography': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/transition@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-qPivx4btoYWX1setROaFVbhP3AzB3OCLggu/MUk05Rr3De67M0vzeKTUS/E6KfObXSPE8xkZ3TRD4HsxYxWXyg==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/portal': 5.1.0(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/tree@5.1.4(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-ldfQbo5qLPBWKjEHJ/V8rvXmHXvOVWzb3wHFBASjPYf75MoPCCKSjO4iNPRPeYuccx/DMEMON3YTBSZsHAmdlQ==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/icon': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/list': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/states': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/typography@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-3ormhB3/lwm5Bvq2lehVbY7Q/wP5WznL03dg+mh5EudyyQE0gJ8v7f06l1rMI96O34fjuhdKY/0Qz9u51rvnsg==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      classnames: 2.3.2
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
-
-  /@react-md/utils@5.1.3(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-orSXDoYa655vCvnpAWCjCtTGc/t8XQKimSn61SIZ5Y7a5oY/ft7n9pLraf921zsfvUIhqnd0e+tPQBd9L9OPQA==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@juggle/resize-observer': 3.4.0
-      classnames: 2.3.2
+      cnbuilder: 3.1.0
+      nanoid: 5.0.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
@@ -1503,10 +999,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /classnames@2.3.2:
-    resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
-    dev: false
-
   /clean-stack@2.2.0:
     resolution: {integrity: sha512-4diC9HaTE+KRAMWhDhrGOECgWZxoevMc5TlkObMqNSsVU62PYzXZ/SMTjzyGAFF1YusgxGcSWTEXBhp0CPwQ1A==}
     engines: {node: '>=6'}
@@ -1546,6 +1038,10 @@ packages:
 
   /client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
+    dev: false
+
+  /cnbuilder@3.1.0:
+    resolution: {integrity: sha512-9sxWwwprkPNTVQnx92WYPEWCmyZRqbf9VWUYABU4rl0mLL17VAV2MvvOApkMA6bQVXRLJ8jN//8Yp6drElpLWA==}
     dev: false
 
   /color-convert@1.9.3:
@@ -3259,6 +2755,12 @@ packages:
     hasBin: true
     dev: false
 
+  /nanoid@5.0.1:
+    resolution: {integrity: sha512-vWeVtV5Cw68aML/QaZvqN/3QQXc6fBfIieAlu05m7FZW2Dgb+3f0xc0TTxuJW+7u30t7iSDTV/j3kVI0oJqIfQ==}
+    engines: {node: ^18 || >=20}
+    hasBin: true
+    dev: false
+
   /natural-compare-lite@1.4.0:
     resolution: {integrity: sha512-Tj+HTDSJJKaZnfiuw+iaF9skdPpTo2GtEly5JHnWV/hfv2Qj/9RKsGISQtLh2ox3l5EAGw487hnBee0sIJ6v2g==}
     dev: true
@@ -3614,49 +3116,6 @@ packages:
   /react-is@17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
     dev: true
-
-  /react-md@5.1.5(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-Q1o/D6G/tbFK8m6vjJm+HJmWYgPOeKlQ/gIWTWJMUYYSmZlti9Ht94DxKRib/soUd/jtUwbInf9sQFTzJPVmpA==}
-    peerDependencies:
-      react: '>= 16.14'
-      react-dom: '>= 16.14'
-    dependencies:
-      '@react-md/alert': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/app-bar': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/autocomplete': 5.1.5(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/avatar': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/badge': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/button': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/card': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/chip': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/dialog': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/divider': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/elevation': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/expansion-panel': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/form': 5.1.4(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/icon': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/layout': 5.1.4(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/link': 5.1.4(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/list': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/material-icons': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/media': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/menu': 5.1.4(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/overlay': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/portal': 5.1.0(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/progress': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/sheet': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/states': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/table': 5.1.4(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/tabs': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/theme': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/tooltip': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/transition': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/tree': 5.1.4(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/typography': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      '@react-md/utils': 5.1.3(react-dom@18.2.0)(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-    dev: false
 
   /react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}

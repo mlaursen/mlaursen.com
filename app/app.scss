@@ -1,21 +1,16 @@
-@use "react-md" with (
-  $rmd-typography-font-family: var(--roboto),
-  $rmd-theme-dark-class: "prefers-color-scheme",
-  $rmd-utils-enable-rtl: false
-);
+@use "everything";
 
-@include react-md.rmd-utils-base;
-@include react-md.react-md-theme;
-@include react-md.react-md-typography;
-@include react-md.react-md-link;
+@layer rmd {
+  @include everything.css-reset;
+  @include everything.css-utils;
+  @include everything.link-styles;
+  @include everything.typography-styles;
 
-@media (prefers-color-scheme: dark) {
   :root {
-    @include react-md.rmd-theme-dark;
-  }
-}
+    @include everything.colors;
 
-// TODO: Revert this commit once styles are loaded correctly again in next
-body {
-  padding-top: 4rem;
+    @media (prefers-color-scheme: dark) {
+      @include everything.use-dark-theme;
+    }
+  }
 }

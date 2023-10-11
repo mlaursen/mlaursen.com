@@ -1,0 +1,8 @@
+@forward "@react-md/core" with (
+  $color-scheme: system,
+  $font-family: var(--roboto, Roboto, sans-serif),
+  $disable-rtl: true,
+  $icon-disable-font: true,
+  $icon-disable-svg: true,
+  $icon-disable-symbol: true
+);
