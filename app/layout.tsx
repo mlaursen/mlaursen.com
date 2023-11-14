@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Roboto_Flex } from "next/font/google";
 import type { ReactElement, ReactNode } from "react";
 import "./app.scss";
@@ -10,8 +10,6 @@ const roboto = Roboto_Flex({
 
 export const metadata: Metadata = {
   title: "Mikkel Laursen",
-  colorScheme: "dark",
-  themeColor: "#000",
   description: "A placeholder portfolio website for Mikkel Laursen",
   manifest: "/site.webmanifest",
   openGraph: {
@@ -52,6 +50,11 @@ export const metadata: Metadata = {
       url: "/favicon.ico",
     },
   ],
+};
+
+export const viewport: Viewport = {
+  themeColor: "#000",
+  colorScheme: "dark",
 };
 
 export interface LayoutProps {

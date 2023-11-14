@@ -4,7 +4,7 @@ import type { ReactElement } from "react";
 export default function Page(): ReactElement {
   return (
     <TextContainer>
-      <Typography type="headline-2" margin="top">
+      <Typography type="headline-2" margin="top" as="h1">
         Hello,
       </Typography>
       <Typography type="headline-4" as="p">
