@@ -7,7 +7,9 @@
   @include everything.typography-styles;
 
   :root {
-    @include everything.colors;
+    @include everything.theme-variables;
+    @include everything.typography-variables;
+    @include everything.link-variables;
 
     @media (prefers-color-scheme: dark) {
       @include everything.use-dark-theme;
