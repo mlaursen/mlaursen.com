@@ -88,7 +88,7 @@ jobs:
       - run: pnpm exec playwright install --with-deps
       - run: pnpm start-static &
       - run: pnpm exec playwright test
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: playwright-report
@@ -109,7 +109,7 @@ jobs:
           persist-credentials: false
 
       - name: Download build folder
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: out
           path: out
