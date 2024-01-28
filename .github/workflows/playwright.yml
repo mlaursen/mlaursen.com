@@ -1,6 +1,6 @@
 name: Test Production
 on:
-  deployment_status:
+  deployment_status
 jobs:
   test:
     timeout-minutes: 60
