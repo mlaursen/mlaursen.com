@@ -18,16 +18,12 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 8
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: pnpm
 
       - name: Run Lint and Typecheck
-        uses: cypress-io/github-action@v5
+        uses: actions/setup-node@v4
         with:
-          runTests: false
-
+          node-version: 18.18.2
+          cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm lint
       - run: pnpm typecheck
@@ -35,19 +31,12 @@ jobs:
   build:
     name: Build website
     runs-on: ubuntu-latest
-    container:
-      image: cypress/browsers:node18.6.0-chrome105-ff104
-      options: --user 1001
     needs: validate
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v2
         with:
           version: 8
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: pnpm
 
       - name: Download build cache
         uses: actions/cache@v3
@@ -61,10 +50,11 @@ jobs:
           restore-keys: ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
 
       - name: Build website
-        uses: cypress-io/github-action@v5
+        uses: actions/setup-node@v4
         with:
-          runTests: false
-
+          node-version: 18
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
       - run: pnpm build
 
       - name: Save build folder
@@ -99,145 +89,42 @@ jobs:
           branch: gh-pages
           folder: out
 
-  test-chrome-prod:
-    name: Test Chrome (Prod)
-    runs-on: ubuntu-latest
-    container:
-      image: cypress/browsers:node18.6.0-chrome105-ff104
-      options: --user 1001
-    needs: deploy
-    steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 8
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: pnpm
-
-      - name: "Cypress Tests - Chrome"
-        uses: cypress-io/github-action@v5
-        with:
-          browser: chrome
-          record: true
-          config: baseUrl=https://mlaursen.com
-          spec: cypress/e2e/*
-          group: "UI - Chrome"
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - uses: actions/upload-artifact@v3
-        if: failure()
-        with:
-          name: chrome-cypress-screenshots
-          path: cypress/screenshots
-      - uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: chrome-cypress-videos
-          path: cypress/videos
-
-  test-firefox-prod:
-    name: Test Firefox (Prod)
-    runs-on: ubuntu-latest
-    container:
-      image: cypress/browsers:node18.6.0-chrome105-ff104
-      options: --user 1001
-    needs: deploy
-    steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 8
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: pnpm
-
-      - name: "Cypress Tests - Firefox"
-        uses: cypress-io/github-action@v5
-        with:
-          browser: firefox
-          record: true
-          config: baseUrl=https://mlaursen.com
-          spec: cypress/e2e/*
-          group: "UI - Firefox"
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - uses: actions/upload-artifact@v3
-        if: failure()
-        with:
-          name: firefox-cypress-screenshots
-          path: cypress/screenshots
-
-      - uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: firefox-cypress-videos
-          path: cypress/videos
-
-  test-chrome-local:
-    name: Test Chrome (Local)
+  test-staging:
+    name: Test Staging
     if: ${{ github.ref != 'refs/heads/main' }}
     runs-on: ubuntu-latest
-    container:
-      image: cypress/browsers:node18.6.0-chrome105-ff104
-      options: --user 1001
     needs: build
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v2
         with:
           version: 8
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: pnpm
 
       - name: Download the build folders
         uses: actions/download-artifact@v3
         with:
           name: out
           path: out
-
-      - name: "Cypress Tests - Chrome"
-        uses: cypress-io/github-action@v5
+      - name: Install dependencies and playwright browsers
+        uses: actions/setup-node@v4
         with:
-          start: pnpm start-static
-          wait-on: "http://localhost:3000"
-          browser: chrome
-          record: true
-          spec: cypress/e2e/*
-          group: "UI - Chrome"
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          COMMIT_INFO_MESSAGE: ${{ github.event.pull_request.title }}
-          COMMIT_INFO_SHA: ${{ github.event.pull_request.head.sha }}
-
-      - uses: actions/upload-artifact@v3
-        if: failure()
-        with:
-          name: chrome-cypress-screenshots
-          path: cypress/screenshots
+          node-version: 18.18.2
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps
+      - run: pnpm exec playwright test
       - uses: actions/upload-artifact@v3
         if: always()
         with:
-          name: chrome-cypress-videos
-          path: cypress/videos
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
 
-  test-firefox-local:
-    name: Test Firefox (Local)
-    if: ${{ github.ref != 'refs/heads/main' }}
+  test-prod:
+    name: Test Production
     runs-on: ubuntu-latest
-    container:
-      image: cypress/browsers:node18.6.0-chrome105-ff104
-      options: --user 1001
-    needs: build
+    needs: validate
+    # needs: deploy
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v2
@@ -248,35 +135,18 @@ jobs:
           node-version: 18
           cache: pnpm
 
-      - name: Download the build folders
-        uses: actions/download-artifact@v3
+      - name: Install dependencies and playwright browsers
+        uses: actions/setup-node@v4
         with:
-          name: out
-          path: out
-
-      - name: "Cypress Tests - Firefox"
-        uses: cypress-io/github-action@v5
-        with:
-          start: pnpm start-static
-          wait-on: "http://localhost:3000"
-          browser: firefox
-          record: true
-          spec: cypress/e2e/*
-          group: "UI - Firefox"
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          COMMIT_INFO_MESSAGE: ${{ github.event.pull_request.title }}
-          COMMIT_INFO_SHA: ${{ github.event.pull_request.head.sha }}
-
-      - uses: actions/upload-artifact@v3
-        if: failure()
-        with:
-          name: firefox-cypress-screenshots
-          path: cypress/screenshots
-
+          node-version: 18.18.2
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps
+      - run: pnpm start-static &
+      - run: BASE_URL=https://mlaursen.com pnpm exec playwright test
       - uses: actions/upload-artifact@v3
         if: always()
         with:
-          name: firefox-cypress-videos
-          path: cypress/videos
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
