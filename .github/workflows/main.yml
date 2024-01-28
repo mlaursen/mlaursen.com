@@ -119,34 +119,3 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
-
-  test-prod:
-    name: Test Production
-    runs-on: ubuntu-latest
-    needs: validate
-    # needs: deploy
-    steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 8
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: pnpm
-
-      - name: Install dependencies and playwright browsers
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18.18.2
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm exec playwright install --with-deps
-      - run: pnpm start-static &
-      - run: BASE_URL=https://mlaursen.com pnpm exec playwright test
-      - uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: playwright-report
-          path: playwright-report/
-          retention-days: 30
