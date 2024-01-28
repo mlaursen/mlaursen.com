@@ -1,18 +1,3 @@
 @use "everything";
 
-@layer rmd {
-  @include everything.css-reset;
-  @include everything.css-utils;
-  @include everything.link-styles;
-  @include everything.typography-styles;
-
-  :root {
-    @include everything.theme-variables;
-    @include everything.typography-variables;
-    @include everything.link-variables;
-
-    @media (prefers-color-scheme: dark) {
-      @include everything.use-dark-theme;
-    }
-  }
-}
+@include everything.styles($disable-layer: true, $disable-css-utils: true);

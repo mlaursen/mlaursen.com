@@ -1,3 +1,4 @@
+import { textContainer } from "@react-md/core";
 import type { Metadata, Viewport } from "next";
 import { Roboto_Flex } from "next/font/google";
 import type { ReactElement, ReactNode } from "react";
@@ -64,7 +65,7 @@ export interface LayoutProps {
 export default function Layout({ children }: LayoutProps): ReactElement {
   return (
     <html lang="en" className={roboto.variable}>
-      <body>{children}</body>
+      <body className={textContainer()}>{children}</body>
     </html>
   );
 }
