@@ -1,7 +1,7 @@
-import { textContainer } from "@react-md/core";
-import type { Metadata, Viewport } from "next";
+import { textContainer } from "@react-md/core/TextContainer";
+import { type Metadata, type Viewport } from "next";
 import { Roboto_Flex } from "next/font/google";
-import type { ReactElement, ReactNode } from "react";
+import { type ReactElement, type ReactNode } from "react";
 import "./app.scss";
 
 const roboto = Roboto_Flex({
