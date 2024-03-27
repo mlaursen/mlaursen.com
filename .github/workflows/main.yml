@@ -25,7 +25,7 @@ jobs:
       - name: Run Lint and Typecheck
         uses: actions/setup-node@v4
         with:
-          node-version: $NODE_VERSION
+          node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm lint
@@ -55,7 +55,7 @@ jobs:
       - name: Build website
         uses: actions/setup-node@v4
         with:
-          node-version: $NODE_VERSION
+          node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
@@ -85,7 +85,7 @@ jobs:
       - name: Install dependencies and playwright browsers
         uses: actions/setup-node@v4
         with:
-          node-version: $NODE_VERSION
+          node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec playwright install --with-deps
