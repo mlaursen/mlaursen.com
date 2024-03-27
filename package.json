@@ -17,7 +17,7 @@
   },
   "engines": {
     "pnpm": ">=8",
-    "node": ">=18"
+    "node": ">=20"
   },
   "engineStrict": true,
   "repository": "git@github.com:mlaursen/mlaursen.com.git",
@@ -48,5 +48,9 @@
     "**/*.{ts,tsx,scss,js,jsx,md,yml,json}": [
       "prettier --write"
     ]
+  },
+  "volta": {
+    "node": "20.12.0",
+    "pnpm": "8.15.5"
   }
 }

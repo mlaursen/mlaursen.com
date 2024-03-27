@@ -1,6 +1,10 @@
 name: Test Production
-on:
-  deployment_status
+
+on: deployment_status
+
+env:
+  NODE_VERSION: 20.12.0
+
 jobs:
   test:
     timeout-minutes: 60
@@ -14,7 +18,7 @@ jobs:
       - name: Install dependencies and playwright browsers
         uses: actions/setup-node@v4
         with:
-          node-version: 18.18.2
+          node-version: $NODE_VERSION
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec playwright install --with-deps

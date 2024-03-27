@@ -9,6 +9,9 @@ on:
   pull_request:
     branches: [main]
 
+env:
+  NODE_VERSION: 20.12.0
+
 jobs:
   validate:
     name: Validate Using Latest Node LTS
@@ -22,7 +25,7 @@ jobs:
       - name: Run Lint and Typecheck
         uses: actions/setup-node@v4
         with:
-          node-version: 18.18.2
+          node-version: $NODE_VERSION
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm lint
@@ -52,7 +55,7 @@ jobs:
       - name: Build website
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: $NODE_VERSION
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
@@ -82,7 +85,7 @@ jobs:
       - name: Install dependencies and playwright browsers
         uses: actions/setup-node@v4
         with:
-          node-version: 18.18.2
+          node-version: $NODE_VERSION
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec playwright install --with-deps
