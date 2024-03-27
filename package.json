@@ -23,26 +23,26 @@
   "repository": "git@github.com:mlaursen/mlaursen.com.git",
   "author": "Mikkel Laursen <mlaursen03@gmail.com>",
   "dependencies": {
-    "@react-md/core": "1.0.0-next.8",
-    "next": "^14.1.0",
+    "@react-md/core": "1.0.0-next.11",
+    "next": "^14.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@mlaursen/eslint-config": "^4.1.0",
-    "@playwright/test": "^1.41.1",
-    "@types/node": "^20.11.8",
-    "@types/react": "^18.2.48",
-    "@types/react-dom": "^18.2.18",
-    "eslint": "^8.56.0",
-    "eslint-config-next": "^14.1.0",
-    "husky": "^9.0.6",
-    "lint-staged": "^15.2.0",
-    "playwright": "^1.41.1",
-    "prettier": "^3.2.4",
-    "sass": "^1.70.0",
+    "@mlaursen/eslint-config": "^4.1.1",
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.73",
+    "@types/react-dom": "^18.2.22",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.1.4",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "playwright": "^1.42.1",
+    "prettier": "^3.2.5",
+    "sass": "^1.72.0",
     "serve": "^14.2.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.3"
   },
   "lint-staged": {
     "**/*.{ts,tsx,scss,js,jsx,md,yml,json}": [
