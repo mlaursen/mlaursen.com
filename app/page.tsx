@@ -1,5 +1,5 @@
-import { Link } from "@react-md/core/Link";
-import { Typography } from "@react-md/core/Typography";
+import { Link } from "@react-md/core/link/Link";
+import { Typography } from "@react-md/core/typography/Typography";
 import { type ReactElement } from "react";
 
 export default function Page(): ReactElement {
