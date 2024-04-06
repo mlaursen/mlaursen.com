@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage should render correctly 1`] = `
+<div>
+  <h1
+    class="rmd-typography rmd-typography--headline-2"
+  >
+    Hello,
+  </h1>
+  <p
+    class="rmd-typography rmd-typography--headline-4"
+  >
+    This page is empty since I haven't really made this site yet. You can check out my 
+    <a
+      class="rmd-link"
+      href="https://github.com/mlaursen"
+    >
+      GitHub
+    </a>
+     
+    for some more information about projects I work on.
+  </p>
+</div>
+`;
