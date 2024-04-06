@@ -20,6 +20,26 @@ const config: JestConfigWithTsJest = {
       },
     ],
   },
+
+  coverageProvider: "v8",
+
+  coverageThreshold: {
+    global: {
+      branches: 98,
+      functions: 98,
+      lines: 98,
+      statements: -10,
+    },
+  },
+
+  // ensure that all files are picked up correctly and included in the results.
+  collectCoverageFrom: [
+    "<rootDir>/app/**/*.{ts,tsx}",
+
+    "!<rootDir>/app/robots.ts",
+    "!<rootDir>/app/sitemap.ts",
+    "!<rootDir>/app/layout.tsx",
+  ],
 };
 
 export default config;
