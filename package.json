@@ -17,7 +17,7 @@
     "start-static": "serve -p 3000 ./out"
   },
   "engines": {
-    "pnpm": ">=8",
+    "pnpm": ">=9.3.0",
     "node": ">=20"
   },
   "engineStrict": true,
@@ -63,6 +63,6 @@
   },
   "volta": {
     "node": "20.12.0",
-    "pnpm": "8.15.5"
+    "pnpm": "9.3.0"
   }
 }
