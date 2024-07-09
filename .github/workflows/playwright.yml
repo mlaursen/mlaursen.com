@@ -2,9 +2,6 @@ name: Test Production
 
 on: deployment_status
 
-env:
-  NODE_VERSION: 20.12.0
-
 jobs:
   test:
     timeout-minutes: 60
@@ -19,7 +16,7 @@ jobs:
       - name: Install dependencies and playwright browsers
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ env.NODE_VERSION }}
+          node-version-file: "package.json"
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm exec playwright install --with-deps
