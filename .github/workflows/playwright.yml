@@ -2,6 +2,9 @@ name: Test Production
 
 on: deployment_status
 
+env:
+  PNPM_VERSION: 9.3.0
+
 jobs:
   test:
     timeout-minutes: 60
@@ -11,7 +14,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v2
         with:
-          version: 9.3.0
+          version: ${{ env.PNPM_VERSION }}
 
       - name: Install dependencies and playwright browsers
         uses: actions/setup-node@v4
