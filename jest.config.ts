@@ -1,25 +1,38 @@
-import { type JestConfigWithTsJest } from "ts-jest";
+import { type Config } from "jest";
+import { type Options as SwcOptions } from "@swc/core";
 
-const config: JestConfigWithTsJest = {
-  preset: "ts-jest/presets/default-esm",
+const config: Config = {
   testEnvironment: "jsdom",
+  transform: {
+    "^.+\\.(t|j)sx?$": [
+      "@swc/jest",
+      {
+        swcrc: false,
+        jsc: {
+          parser: {
+            syntax: "typescript",
+            tsx: true,
+          },
+          transform: {
+            react: {
+              runtime: "automatic",
+            },
+          },
+          target: "esnext",
+        },
+      } satisfies SwcOptions,
+    ],
+  },
   setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
-  extensionsToTreatAsEsm: [".ts", ".tsx"],
   moduleNameMapper: {
     "\\.scss$": "identity-obj-proxy",
     "^(\\.{1,2}/.*)\\.js$": "$1",
   },
-  transform: {
-    // '^.+\\.[tj]sx?$' to process js/ts with `ts-jest`
-    // '^.+\\.m?[tj]sx?$' to process js/ts/mjs/mts with `ts-jest`
-    "^.+\\.tsx?$": [
-      "ts-jest",
-      {
-        useESM: true,
-        tsconfig: "./tsconfig.test.json",
-      },
-    ],
-  },
+
+  watchPlugins: [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname",
+  ],
 
   coverageProvider: "v8",
 
@@ -40,6 +53,8 @@ const config: JestConfigWithTsJest = {
     "!<rootDir>/app/sitemap.ts",
     "!<rootDir>/app/layout.tsx",
   ],
+
+  extensionsToTreatAsEsm: [".ts", ".tsx"],
 };
 
 export default config;
