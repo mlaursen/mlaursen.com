@@ -17,8 +17,8 @@
     "start-static": "serve -p 3000 ./out"
   },
   "engines": {
-    "pnpm": ">=9.3.0",
-    "node": ">=20"
+    "pnpm": "10.5.1",
+    "node": "22.14.0"
   },
   "engineStrict": true,
   "repository": "git@github.com:mlaursen/mlaursen.com.git",
