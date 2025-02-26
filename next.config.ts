@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  sassOptions: {
+    implementation: "sass-embedded",
+  },
 };
 
 export default nextConfig;
