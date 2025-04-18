@@ -30,9 +30,11 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
     "@jest/globals": "^29.7.0",
     "@jest/types": "^29.6.3",
-    "@mlaursen/eslint-config": "^7.1.0",
+    "@mlaursen/eslint-config": "^8.0.0",
+    "@next/eslint-plugin-next": "^15.3.1",
     "@playwright/test": "^1.51.1",
     "@swc/core": "^1.11.21",
     "@swc/jest": "^0.2.37",
