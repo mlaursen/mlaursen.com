@@ -1,4 +1,7 @@
 node_modules
 .next
+/logs
 /public/site.manifest
 /out
+/test-results
+/coverage
