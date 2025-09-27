@@ -1,5 +1,5 @@
-import { type Config } from "jest";
 import { type Options as SwcOptions } from "@swc/types";
+import { type Config } from "jest";
 
 const config: Config = {
   testEnvironment: "jsdom",
