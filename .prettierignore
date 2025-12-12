@@ -1,7 +1,9 @@
 node_modules
 .next
 /logs
-/public/site.manifest
+/public/site.webmanifest
 /out
 /test-results
 /coverage
+
+pnpm*.yaml

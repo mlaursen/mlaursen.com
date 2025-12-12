@@ -1,21 +1,28 @@
 // @ts-check
-import { FlatCompat } from "@eslint/eslintrc";
-import { config, configs, gitignore } from "@mlaursen/eslint-config";
+import { configs, gitignore } from "@mlaursen/eslint-config";
+import { defineConfig } from "eslint/config";
+import nextPlugin from "@next/eslint-plugin-next";
 
-const compat = new FlatCompat({
-  baseDirectory: import.meta.dirname,
-});
-
-export default config(
+export default defineConfig([
+  nextPlugin.configs["core-web-vitals"],
   gitignore(import.meta.url),
-  ...compat.config({
-    extends: ["plugin:@next/next/core-web-vitals"],
+  ...configs.recommendedFrontend({
+    reactRefresh: "next",
+    reactCompiler: true,
+    testFramework: "jest",
+    tsconfigRootDir:
+      process.env.STRICT_TYPING === "true" ? import.meta.dirname : undefined,
   }),
-  ...configs.frontendTypeChecking(import.meta.dirname, "jest"),
+  {
+    files: ["next-env.d.ts"],
+    rules: {
+      "@typescript-eslint/triple-slash-reference": "off",
+    },
+  },
   {
     files: ["tests/**/*.spec.ts"],
     rules: {
       "testing-library/prefer-screen-queries": "off",
     },
-  }
-);
+  },
+]);
