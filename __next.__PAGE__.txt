@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[52633,["/_next/static/chunks/a169b822e53c07fb.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"buildId":"jKP3N4H-mh3Sv7m49-Ga_","rsc":["$","$1","c",{"children":[[["$","h1",null,{"className":"rmd-typography rmd-typography--headline-2","children":"Hello,"}],["$","p",null,{"className":"rmd-typography rmd-typography--headline-4","children":["This page is empty since I haven't really made this site yet. You can check out my ",["$","a",null,{"href":"https://github.com/mlaursen","className":"rmd-link","children":"GitHub"}]," ","for some more information about projects I work on."]}]],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
+4:null
