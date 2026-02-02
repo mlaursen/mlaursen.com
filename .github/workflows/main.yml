@@ -4,7 +4,7 @@
 name: Main Workflow
 
 env:
-  PNPM_VERSION: 10.26.0
+  PNPM_VERSION: 10.28.2
 
 on:
   push:
