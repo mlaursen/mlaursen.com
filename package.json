@@ -9,7 +9,7 @@
     "prepare": "husky",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsgo --noEmit",
     "test": "NODE_OPTIONS=--experimental-vm-modules NODE_NO_WARNINGS=1 jest app",
     "lint": "eslint \"**/*.{ts,tsx,js,jsx}\"",
     "lint-fix": "pnpm lint --fix",
@@ -47,6 +47,7 @@
     "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
+    "@typescript/native-preview": "beta",
     "eslint": "^9.39.3",
     "husky": "^9.1.7",
     "identity-obj-proxy": "^3.0.0",
@@ -58,7 +59,7 @@
     "prettier": "^3.8.3",
     "sass-embedded": "^1.99.0",
     "serve": "^14.2.6",
-    "typescript": "^6.0.3"
+    "typescript": "npm:@typescript/typescript6@^6.0.0"
   },
   "lint-staged": {
     "**/*.{ts,tsx,scss,js,jsx,md,yml,json}": [
