@@ -8,7 +8,11 @@ const nextConfig: NextConfig = {
   },
   sassOptions: {
     implementation: "sass-embedded",
-    silenceDeprecations: ["if-function"],
+  },
+  turbopack: {
+    resolveAlias: {
+      everything: "./_everything.scss",
+    },
   },
 };
 

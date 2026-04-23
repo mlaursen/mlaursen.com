@@ -58,7 +58,7 @@
     "prettier": "^3.8.3",
     "sass-embedded": "^1.99.0",
     "serve": "^14.2.6",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.3"
   },
   "lint-staged": {
     "**/*.{ts,tsx,scss,js,jsx,md,yml,json}": [
