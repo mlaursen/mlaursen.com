@@ -22,8 +22,8 @@ jobs:
           node-version-file: "package.json"
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm exec playwright install --with-deps
-      - run: pnpm exec playwright test
+      - run: pnpm playwright-install
+      - run: pnpm playwright-test
         env:
           PLAYWRIGHT_TEST_BASE_URL: ${{ github.event.deployment_status.target_url }}
       - uses: actions/upload-artifact@v3
