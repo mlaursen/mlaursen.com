@@ -18,6 +18,8 @@ some "fun" [Playwright] tests for no reason.
 
 ## Installation
 
+Install [mise] if not done so already to manage node and pnpm versions.
+
 ```sh
 pnpm i
 # optional
@@ -35,7 +37,7 @@ pnpm exec playwright install --with-deps
       Firefox
   - New commits/merges into `main`
     - Prevent errors by running `pnpm lint` and `pnpm typecheck`
-    - Build and deploy the website to https://mlaursen.com
+    - Build and deploy the website to <https://mlaursen.com>
     - Run [Playwright] end-to-end tests against the newly deployed code with Chrome
       and Firefox
 - [codeql_analysis.yml](./.github/workflows/codeql_analysis.yml) - check for
@@ -48,3 +50,4 @@ pnpm exec playwright install --with-deps
 [prettier]: https://prettier.io
 [serve]: https://www.npmjs.com/package/serve
 [@mlaursen/eslint-config]: https://github.com/mlaursen/eslint-config
+[mise]: https://mise.jdx.dev/

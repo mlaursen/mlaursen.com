@@ -65,9 +65,5 @@
     "node": "24.15.0",
     "pnpm": "10.33.2"
   },
-  "engineStrict": true,
-  "volta": {
-    "node": "24.15.0",
-    "pnpm": "10.33.2"
-  }
+  "engineStrict": true
 }
