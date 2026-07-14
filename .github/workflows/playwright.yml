@@ -3,7 +3,7 @@ name: Test Production
 on: deployment_status
 
 env:
-  PNPM_VERSION: 10.28.2
+  PNPM_VERSION: 11.13.0
 
 jobs:
   test:
